@@ -1,0 +1,23 @@
+.event-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20;
+}
+.landing-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.landing-container h1 {
+  font-family: "Inter", serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+@media (min-width: 769px) {
+  .event-card-container {
+    justify-content: space-around;
+  }
+}

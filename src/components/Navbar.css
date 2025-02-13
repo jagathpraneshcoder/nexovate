@@ -1,0 +1,164 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container img {
+  height: 64px;
+}
+.csda-logo img {
+  margin-top: -16px;
+  filter: contrast(1.9) brightness(1.5);
+}
+.cdcc-logo img {
+  filter: contrast(1.9) brightness(1.5);
+}
+.event-name-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  flex-grow: 1;
+}
+.event-name-logo h1 {
+  color: #fff;
+  font-family: "Jaro", sans-serif;
+  font-size: 32px;
+  margin-left: 4px;
+}
+
+.menu-container {
+  background: #1010106f;
+  backdrop-filter: blur(10px);
+  padding: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav ul li {
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  color: #25fe62;
+}
+
+nav ul li button {
+  padding: 4px 12px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li button:hover {
+  color: #fff;
+  background-color: #25fe62;
+}
+
+/* Media query for larger screens (PC) */
+@media (min-width: 769px) {
+  /* Header container */
+  .header-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-container img {
+    height: 64px;
+  }
+
+  .csda-logo img {
+    width: 8em;
+    height: 8em;
+    margin-top: -16px;
+    filter: contrast(1.9) brightness(1.5);
+  }
+
+  .cdcc-logo img {
+    width: 8em;
+    height: 8em;
+    filter: contrast(1.9) brightness(1.5);
+  }
+
+  /* Event name logo */
+  .event-name-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .event-name-logo h1 {
+    color: #fff;
+    font-family: "Jaro", sans-serif;
+    font-size: 52px;
+    margin-left: 4px;
+  }
+
+  /* Menu container */
+  .menu-container {
+    background: #1010106f;
+    backdrop-filter: blur(10px);
+    padding: 12px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Navigation Menu */
+  nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  nav ul li {
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+
+  nav ul li:hover {
+    color: #25fe62;
+  }
+
+  nav ul li button {
+    padding: 6px 18px; /* Increase padding for buttons */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  nav ul li button:hover {
+    color: #fff;
+    background-color: #25fe62;
+  }
+}
