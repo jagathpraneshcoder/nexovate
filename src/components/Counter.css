@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-.counter-container {
+.counter-container{
   text-align: center;
   color: white;
   padding: 20px;
   border-radius: 12px;
 }
 
-.counter-head {
+.counter-head{
   font-family: "Inter", serif;
   font-size: 28px;
   font-weight: bold;
@@ -23,7 +23,7 @@
   margin-top: 20px;
 }
 
-.card {
+.card-c {
   background: rgba(144, 238, 144, 0.3); /* Light green background */
   color: white;
   width: 80px;
@@ -42,7 +42,7 @@
 }
 
 /* Background icon with blur effect */
-.card::before {
+.card-c::before {
   content: attr(data-icon);
   position: absolute;
   font-size: 80px;
