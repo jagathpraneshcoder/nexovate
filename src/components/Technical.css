@@ -1,0 +1,13 @@
+.technical-container{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.technical-container h1{
+  font-family: "Inter", serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
