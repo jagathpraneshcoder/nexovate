@@ -7,7 +7,6 @@ import Cards from "./Cards";
 export default function Technical({ data, title }) {
   return (
     <div>
-      <Navbar />
       <div className="technical-container">
         <div>
           <h1>{title}</h1>
