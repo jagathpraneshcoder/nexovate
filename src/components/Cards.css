@@ -1,3 +1,14 @@
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .card {
   width: 270px;
   height: 400px;
@@ -7,11 +18,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 10px;
   position: relative;
   margin: 20px 0px;
+  animation: scrollAnimation 1s ease-out;
 }
 
 .event-image {
@@ -19,7 +31,7 @@
   width: 80%;
   height: 160px;
   border-radius: 8px;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .event-name {
@@ -57,7 +69,7 @@
   color: red;
 }
 
-.app{
+.app {
   display: flex;
   justify-content: center;
   align-items: center;
