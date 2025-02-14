@@ -5,7 +5,10 @@ import EventCard from "./EventCards";
 import kingFrame from "../assets/king-frame.svg";
 import king from "../assets/king.svg";
 import queen from "../assets/queen.svg";
+import Prize from "./Prize";
 import "./Landing.css";
+import Contact from "./Contact";
+import flyer from "../assets/flyer.webp";
 function Landing() {
   const data = [
     {
@@ -35,11 +38,15 @@ function Landing() {
       <Navbar />
       <div className="landing-container">
         <div>
-          <h1>THE SYMPOSIUM</h1>
+          <span>THE</span>
+          <span> SYMPOSIUM</span>
         </div>
-        <div className="poster-container"></div>
+        <div className="poster-container">
+          <img src={flyer} alt="poster"></img>
+        </div>
       </div>
       <Counter />
+      <Prize />
       <div className="event-card-container">
         {data.map((data, index) => (
           <EventCard
@@ -51,6 +58,7 @@ function Landing() {
           />
         ))}
       </div>
+      <Contact />
     </>
   );
 }

@@ -1,23 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;700&display=swap");
 .event-card-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 20;
 }
 .landing-container {
-  margin: 20px;
+  margin: 20px 0px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
-.landing-container h1 {
+.landing-container span {
   font-family: "Inter", serif;
   font-size: 28px;
   font-weight: bold;
   margin: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+.landing-container span:nth-child(2) {
+  color: #daa735;
+}
+.poster-container {
+  width: 80%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster-container img {
+  width: 100%;
+  height: 100%;
 }
 @media (min-width: 769px) {
   .event-card-container {
     justify-content: space-around;
+  }
+  .poster-container {
+    width: 50%;
+    height: 950px;
+  }
+}
+
+/*Prize component css*/
+.prize-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.prize-card {
+  width: 288px;
+  height: 203px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-center {
+  text-align: center;
+}
+
+.card-center img {
+  width: 70px;
+}
+
+.card-center p {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: "Inknut Antiqua", serif;
+  color: red;
+}
+
+.card-center button {
+  padding: 4px 25px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.card-center button:hover {
+  background-color: #b12000;
+  font-style: normal;
+}
+
+/* Top Right Corner */
+.card-top-right {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+
+.card-top-right img {
+  width: 110px;
+}
+
+/* Bottom Left Corner */
+.card-bottom-left {
+  position: absolute;
+  bottom: -35px;
+  left: -20px;
+}
+
+.card-bottom-left img {
+  width: 100px;
+}
+
+/* Bottom Right Corner (Heart & A) */
+.card-bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+@media screen and (min-width: 1024px) {
+  .prize-card {
+    width: 400px; /* Increase card size for bigger screens */
+    height: 280px;
+    border-radius: 20px;
+  }
+
+  .card-center img {
+    width: 100px; /* Increase image size */
+  }
+
+  .card-center p {
+    font-size: 26px; /* Increase text size */
+  }
+
+  .card-center button {
+    padding: 6px 30px;
+    font-size: 18px;
+  }
+
+  .card-top-right img {
+    width: 140px; /* Increase top-right image */
+  }
+
+  .card-bottom-left img {
+    width: 130px; /* Increase bottom-left image */
+  }
+
+  .card-bottom-right {
+    font-size: 28px; /* Increase heart & A size */
   }
 }

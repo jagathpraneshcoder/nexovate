@@ -12,6 +12,13 @@
   align-items: center;
   padding: 10px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.event-card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffebeb;
 }
 
 .card-top,
@@ -39,7 +46,7 @@
   height: 100%;
   margin: 10px 0px;
   border: 0.1px solid rgba(255, 0, 0, 0.797);
-  background: rgba(211, 211, 211, 0.237);
+  background: rgba(240, 240, 240, 0.237);
   border-radius: 8px;
 }
 
@@ -93,4 +100,101 @@
 
 .event-details button:hover {
   background-color: #af0000;
+}
+
+/*Contact card css*/
+.contact-card {
+  width: 280px;
+  height: 100%;
+  background: white;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px #fff;
+}
+
+.contact-top iframe {
+  width: 100%; /* Ensures it fills the container */
+  height: 100%;
+  object-fit: cover; /* Crops to fit the space without gray areas */
+  border-radius: 5px;
+}
+
+.contact-card-inside {
+  width: 80%;
+  height: 100%;
+  margin: 10px 0px;
+  background: rgba(240, 240, 240, 0.237);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-details {
+  height: 40%;
+  width: 100%;
+  font-size: 14px;
+  text-align: justify;
+  color: #000000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+}
+a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits color from parent */
+}
+.contact-details ul {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.contact-details ul li:hover {
+  color: rgb(0, 188, 0);
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-card {
+    width: 500px; /* Increase width for larger screens */
+    height: auto; /* Adjust height dynamically */
+    padding: 10px; /* Increase padding for better spacing */
+  }
+
+  .contact-card-inside {
+    width: 100%; /* Make content area larger */
+    padding: 15px;
+  }
+
+  .contact-details {
+    font-size: 18px; /* Increase text size */
+  }
+
+  .contact-details ul {
+    font-size: 20px; /* Make list items bigger */
+  }
+
+  .contact-details ul li {
+    padding: 10px 0; /* Increase spacing between list items */
+  }
+
+  .contact-top iframe {
+    width: 450px; /* Increase map size */
+    height: 350px;
+  }
+
+  .card-top,
+  .card-bottom {
+    font-size: 30px; /* Increase icon size */
+  }
 }

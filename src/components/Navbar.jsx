@@ -23,9 +23,7 @@ function Navbar() {
             <li>Home</li>
             <li>About</li>
             <li>Events</li>
-            <li>
-              <button>Register</button>
-            </li>
+            <li>Register</li>
           </ul>
         </nav>
       </div>
