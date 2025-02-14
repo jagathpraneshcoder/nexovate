@@ -1,189 +1,188 @@
 .about-us-container {
-    width: auto;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: auto;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Header Section */
 .header-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 .header {
-    position: relative;
-    top: 30px;
-    display: flex;
-    right: 30px;
-    gap: 10px;
+  position: relative;
+  top: 30px;
+  display: flex;
+  right: 30px;
+  gap: 10px;
 }
 
 .header-section h2 {
-    font-family: "Jaro";
-    font-size: 40px;
-    font-weight: 400;
+  font-family: "Jaro";
+  font-size: 40px;
+  font-weight: 400;
 }
 
 /* Icons */
-.icon-left, .icon-right {
-    height: 50px;
+.icon-left,
+.icon-right {
+  height: 50px;
+  z-index: -999;
 }
 
 .icon-left {
-    height: 72px;
-    width: 47px;
-    margin-top: 20px;
+  height: 72px;
+  width: 47px;
+  margin-top: 20px;
 }
 
 .icon-right {
-    position: absolute;
-    right: -20px;
-    height: 132px;
-    width: 135px;
+  position: absolute;
+  top: 25px;
+  right: -20px;
+  height: 132px;
+  width: 135px;
 }
 
 /* Card Container */
 .card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
 }
 
 /* Card Styling */
 .about-card {
-    margin: 30px;
-    background-color: white;
-    color: black;
-    padding: 10px;
-    width: 332px;
-    z-index: 99;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
-    text-align: center;
+  margin-top: 30px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  z-index: 99;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+  text-align: center;
 }
 
 /* Card Corners */
 .card-corner {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    color: red;
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
 }
 
 .top-left {
-    top: 10px;
-    left: 10px;
+  top: 10px;
+  left: 10px;
 }
 
 .bottom-right {
-    bottom: 10px;
-    right: 10px;
-    transform: rotate(180deg);
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
 }
 
 /* Card 2 Position */
 .card2 {
-    position: relative;
+  position: relative;
 }
 
 .bottom-chip {
-    position: absolute;
-    left: -58px;
-    top: -55px;
-    z-index: 1;
+  position: absolute;
+  left: -58px;
+  top: -55px;
+  z-index: 1;
 }
 
 .bottom-poker {
-    position: absolute;
-    left: -5px;
-    bottom: -20px;
-    z-index: 999;
+  position: absolute;
+  left: -5px;
+  bottom: -20px;
+  z-index: 999;
 }
 
 .card-header {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-end;
-    text-align: center;
-    gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 /* Card Text */
 .about-card h3 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: Kumar One;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Kumar One;
 }
 
 .about-card p {
-    padding: 10px;
-    text-align: left;
-    font-size: 15px;
-    line-height: 20px;
-    font-family: Inter;
-    font-weight: 600;
-    text-align: justify;
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  text-align: justify;
 }
 
 .card1-space {
-    height: 40px;
+  height: 40px;
 }
 
 /* Logos */
 .college-logo {
-    width: 74px;
-    height: 74px;
-    margin-top: 10px;
+  width: 74px;
+  height: 74px;
+  margin-top: 10px;
 }
 
 .small-logo {
-    width: 60px;
+  width: 60px;
 }
 
 .club_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Footer */
 .footer-icons {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .footer-chip {
-    width: 60px;
+  width: 60px;
 }
 
 .footer-club {
-    width: 130px;
+  width: 130px;
 }
 
 .footer-diamond {
-    width: 50px;
+  width: 50px;
 }
 
 .footer-nexovate {
-    width: 80px;
+  width: 80px;
 }
 
 /* 🌟 MOBILE VIEW (Max-width: 768px) */
- 

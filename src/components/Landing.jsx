@@ -57,6 +57,7 @@ function Landing() {
       </div>
       <Counter />
       <Prize />
+      <AboutUs />
       <div className="event-card-container">
         {data.map((data, index) => (
           <EventCard
@@ -70,7 +71,6 @@ function Landing() {
         ))}
       </div>
       <Contact />
-      <AboutUs />
     </>
   );
 }

@@ -8,13 +8,14 @@
 
 .workshops-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-size: cover; 
-  background-position: center; 
-  background-attachment: fixed; 
-  background-repeat: no-repeat; 
-  width: 100vw; 
+  justify-content: center;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  max-width: 100%;
   height: 100vh;
   padding: 20px;
   gap: 40px;
@@ -22,16 +23,19 @@
 
 .workshop-card {
   position: relative;
-  width: 330px;
+  width: 300px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .workshop-title {
-  font-size: 1.5rem;
-  color: white;
+  font-family: "Inter", serif;
+  font-size: 40px;
   font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  margin: 10px 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .cards {
@@ -46,6 +50,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: auto; /* Center the card */
 }
 
 .card-border {
@@ -72,7 +77,19 @@
   text-align: center;
   padding: 8px;
 }
-
+.card-content button {
+  border: none;
+  padding: 7px 25px;
+  background-color: red;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.card-content button:hover {
+  background-color: #5c0000;
+}
 .card-content h3 {
   font-size: 1.125rem;
   font-weight: bold;
@@ -150,10 +167,6 @@
     gap: 20px;
   }
 
-  .workshop-title {
-    font-size: 1.25rem;
-  }
-
   .cards {
     width: 310px;
     height: auto;
@@ -205,11 +218,6 @@
   .workshops-container {
     padding: 10px;
     gap: 15px;
-    margin-left:25px;
-  }
-
-  .workshop-title {
-    font-size: 1rem;
   }
 
   .cards {
@@ -260,7 +268,6 @@
   }
 }
 
-
 .badge:empty {
-  display: block; 
+  display: block;
 }

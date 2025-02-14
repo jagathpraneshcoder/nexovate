@@ -61,6 +61,7 @@ function App() {
           element={<Technical data={dataNonTech} title="Non-Tech" />}
         />
         <Route path="/non-tech-event/:id" element={<NonTech />} />
+        <Route path="/work-shop" element={<Workshops />} />
       </Routes>
     </Router>
   );
