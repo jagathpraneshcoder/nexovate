@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import Landing from "./components/Landing";
+import EventDisplay from "./components/EventDisplay";
 function App() {
   return (
     <div>
-      <Landing />
+      <EventDisplay />
     </div>
   );
 }
