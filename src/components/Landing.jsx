@@ -9,6 +9,7 @@ import Prize from "./Prize";
 import "./Landing.css";
 import Contact from "./Contact";
 import flyer from "../assets/flyer.webp";
+import AboutUs from "./AboutUs.jsx";
 function Landing() {
   const data = [
     {
@@ -59,6 +60,7 @@ function Landing() {
         ))}
       </div>
       <Contact />
+      <AboutUs />
     </>
   );
 }
