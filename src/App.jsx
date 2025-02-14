@@ -6,6 +6,7 @@ import Technical from "./components/Technical";
 import king from "./assets/king.svg";
 import queen from "./assets/queen.svg";
 import NonTech from "./components/NonTech/NonTech";
+import Workshops from "./components/Workshop";
 function App() {
   const dataTech = [
     {

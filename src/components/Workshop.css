@@ -1,0 +1,266 @@
+/* .workshops-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+} */
+
+.workshops-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  background-repeat: no-repeat; 
+  width: 100vw; 
+  height: 100vh;
+  padding: 20px;
+  gap: 40px;
+}
+
+.workshop-card {
+  position: relative;
+  width: 330px;
+  text-align: center;
+}
+
+.workshop-title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.cards {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  position: relative;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-border {
+  border: 2px solid black;
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  padding: 9px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.card-content {
+  text-align: center;
+  padding: 8px;
+}
+
+.card-content h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.card-content p,
+.card-content li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.coordinator {
+  font-weight: bold;
+  color: #d32f2f;
+  margin-top: 8px;
+}
+
+/* Poker Card Rank & Suit Styling */
+.card-corner {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+/* Badge & Poker Chip */
+.badge {
+  width: 120px;
+  position: absolute;
+  bottom: -28px;
+  left: -25px;
+}
+
+.chip {
+  width: 100px;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+
+/* Description */
+.description {
+  text-align: justify;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.rank,
+.suit {
+  width: 30px;
+  font-size: 30px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .workshops-container {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .workshop-title {
+    font-size: 1.25rem;
+  }
+
+  .cards {
+    width: 310px;
+    height: auto;
+  }
+
+  .card-border {
+    width: 100%;
+    max-width: 230px;
+    height: 450px;
+  }
+
+  .card-image {
+    width: 90%;
+  }
+
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  .card-content p,
+  .card-content li {
+    font-size: 0.75rem;
+  }
+
+  .coordinator {
+    font-size: 0.875rem;
+  }
+
+  .rank,
+  .suit {
+    font-size: 24px;
+  }
+
+  /* Reduce size of badge and chip on mobile */
+  .badge {
+    width: 120px;
+    bottom: -30px;
+    left: -30px;
+  }
+
+  .chip {
+    width: 100px;
+    top: -20px;
+    right: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .workshops-container {
+    padding: 10px;
+    gap: 15px;
+    margin-left:25px;
+  }
+
+  .workshop-title {
+    font-size: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 520px;
+  }
+
+  .card-border {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-content h3 {
+    font-size: 0.875rem;
+  }
+
+  .card-content p,
+  .card-content li {
+    font-size: 0.75rem;
+  }
+
+  .coordinator {
+    font-size: 0.75rem;
+  }
+
+  .rank,
+  .suit {
+    font-size: 20px;
+  }
+
+  /* Further reduce size of badge and chip on very small screens */
+  .badge {
+    width: 90px;
+    bottom: -21px;
+    left: -15px;
+  }
+
+  .chip {
+    width: 80px;
+    top: -15px;
+    right: -15px;
+  }
+}
+
+
+.badge:empty {
+  display: block; 
+}
