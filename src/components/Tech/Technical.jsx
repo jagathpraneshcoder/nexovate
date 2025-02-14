@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar from "../Navbar.jsx";
 import './Technical.css'
 import Cards from "./Cards";
 import events from "./event.js"
