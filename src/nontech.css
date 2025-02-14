@@ -1,0 +1,192 @@
+body{
+    background-image: url('./assets/bg-img-2.svg');
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden !important;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.ace-img{
+    height: 75px;
+    width: 120px;
+    position: absolute;
+    top: 40px;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    font-family: 'Jaro', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.h-text{
+    display: flex;
+    text-align: center;
+        /* align-self: center; */
+    font-size: 25px;
+    color: white;
+    z-index: 1;
+}
+
+.card-non-tech{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    min-height: 390px;
+    width: 240px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.card-1{
+    top: 500px;
+    /* height: 400px; */
+    transform: rotateZ(-10deg);
+    z-index: 3;
+}
+
+.card-2{
+    top: 0px;
+    transform: rotateZ(10deg);
+    z-index: 2;
+}
+
+.card-3{
+    top:-500px;
+    transform: rotateZ(-10deg);
+    /* transform: rotateZ(20deg); */
+    z-index: 1;
+}
+
+
+.black{
+    border: 2px solid black;
+    color: black;
+}
+
+.red{
+    border: 2px solid red;
+    color: red;
+}
+
+.card-symbol{
+    height: 30  px;
+    width: 30   px;
+}
+
+.card-header{
+    font-family: 'Russo One', sans-serif;
+    height: 75px;
+    max-width: 75%;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.card-content-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.card-no{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-footer{
+    width: 100%;
+    display: flex;
+    height: 75px;
+}
+
+.sym-top,
+.sym-btm{
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sym-top{
+    top: 2px;
+    left: 7px;
+}
+
+.sym-btm{
+    bottom: 2px;
+    right: 7px;
+    rotate: 180deg;
+}
+
+.deck{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* flex-grow: 1; */
+    max-height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.rel-deck{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+#non-tech{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.bg-card{
+    position: absolute;
+    height: 450px;
+    width: 234px;
+    z-index: -1;
+    bottom: -45px;
+    left: 0;
+    /* transform: rotateZ(-10deg); */
+}
+
+.img-1{
+    right: 5px;
+}
+
+.bg-coin{
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    right: -0px;
+    top: 480px;
+    z-index: 4;
+}
+
+html{
+    overflow: hidden !important;
+}
