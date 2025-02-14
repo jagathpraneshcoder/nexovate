@@ -8,9 +8,10 @@ const Cards = ({ suit, rank, image, name, description }) => {
         <span>{rank}</span>
         <span>{suit}</span>
       </div>
-      <img src={image} alt={name} className="event-image" />
+      <img src={image} className="event-image" />
       <h2 className="event-name">{name}</h2>
       <p className="event-description">{description}</p>
+      <button className="explore-button">Explore</button>
       <div className="card-corner bottom-right">
         <span>{rank}</span>
         <span>{suit}</span>
@@ -20,3 +21,4 @@ const Cards = ({ suit, rank, image, name, description }) => {
 };
 
 export default Cards;
+

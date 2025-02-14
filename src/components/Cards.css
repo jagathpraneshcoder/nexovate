@@ -16,8 +16,8 @@
 
 .event-image {
   margin-top: 30px;
-  width: 90%;
-  height: 150px;
+  width: 80%;
+  height: 160px;
   border-radius: 8px;
   object-fit:cover;
 }
@@ -63,4 +63,24 @@
   align-items: center;
   flex-wrap: wrap; /* Optional: to handle multiple cards in a responsive manner */
   height: 100vh; /* Optional: to center vertically within the viewport */
+}
+
+.explore-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+.explore-button:active {
+  background-color: #003f7f;
 }
