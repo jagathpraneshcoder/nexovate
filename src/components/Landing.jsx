@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+
 import Counter from "./Counter";
 import EventCard from "./EventCards";
 import kingFrame from "../assets/king-frame.svg";
@@ -10,7 +10,7 @@ import "./Landing.css";
 import Contact from "./Contact";
 import flyer from "../assets/flyer.webp";
 import AboutUs from "./AboutUs.jsx";
-function Landing() {
+function Landing({ aboutRef, eventsRef, registerRef }) {
   const data = [
     {
       photo: king,
@@ -39,15 +39,14 @@ function Landing() {
   ];
   return (
     <>
-      <Navbar />
       <div className="landing-container">
         <div>
           <span>THE</span>
           <span> SYMPOSIUM</span>
         </div>
-        <div className="poster-container">
+        {/* <div className="poster-container">
           <img src={flyer} alt="poster"></img>
-        </div>
+        </div> */}
       </div>
       <div className="marque">
         <p>
@@ -57,8 +56,10 @@ function Landing() {
       </div>
       <Counter />
       <Prize />
-      <AboutUs />
-      <div className="event-card-container">
+      <section ref={aboutRef}>
+        <AboutUs />
+      </section>
+      <div className="event-card-container" ref={eventsRef}>
         {data.map((data, index) => (
           <EventCard
             key={index}

@@ -13,6 +13,7 @@
   padding: 10px;
   margin-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  perspective: 1000px;
 }
 .event-card:hover {
   cursor: pointer;
@@ -48,6 +49,8 @@
   border: 0.1px solid rgba(255, 0, 0, 0.797);
   background: rgba(240, 240, 240, 0.237);
   border-radius: 8px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
 .event-top {

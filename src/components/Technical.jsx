@@ -7,7 +7,6 @@ export default function Technical(){
 
   return(
     <div>
-      <Navbar />
       <div className="technical-container">
         <div>
           <h1>Technical</h1>

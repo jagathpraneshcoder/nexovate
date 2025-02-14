@@ -2,7 +2,7 @@ import React from "react";
 import bottle from "../assets/bottle.svg";
 import venue from "../assets/venue.svg";
 import nexovateRegister from "../assets/nexovate-register.svg";
-
+import { motion } from "framer-motion";
 function Prize() {
   return (
     <div className="prize-container">
@@ -13,10 +13,22 @@ function Prize() {
           <button>Register & Play</button>
         </section>
         <section className="card-top-right">
-          <img src={nexovateRegister} alt="nexovateRegister"></img>
+          <motion.img
+            src={nexovateRegister}
+            alt="nexovateRegister"
+            className="nexovateRegister"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 3, repeat: Infinity }}
+          />
         </section>
         <section className="card-bottom-left">
-          <img src={venue} alt="venue"></img>
+          <motion.img
+            src={venue}
+            alt="venue"
+            className="venue"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 3, repeat: Infinity }}
+          />
         </section>
         <section className="card-bottom-right">♥ A</section>
       </div>
