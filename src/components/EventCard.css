@@ -152,11 +152,12 @@ a {
   color: inherit; /* Inherits color from parent */
 }
 .contact-details ul {
+  margin-top: 20px;
   padding: 0;
   width: 100%;
   list-style: none;
   font-size: 18px;
-  text-align: justify;
+  text-align: center;
   font-weight: 600;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }

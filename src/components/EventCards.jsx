@@ -1,6 +1,7 @@
 import React from "react";
 import "./EventCard.css";
-function EventCard({ photo, title, details }) {
+import { Link } from "react-router-dom";
+function EventCard({ photo, title, details, link }) {
   return (
     <div className="event-card">
       <section className="card-top">
@@ -13,7 +14,9 @@ function EventCard({ photo, title, details }) {
         <section className="event-details">
           <h6>{title}</h6>
           <p>{details}</p>
-          <button>Explore</button>
+          <Link to={link}>
+            <button>Explore</button>
+          </Link>
         </section>
       </div>
       <section className="card-bottom">

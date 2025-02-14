@@ -14,6 +14,7 @@ function Landing() {
     {
       photo: king,
       frame: kingFrame,
+      link: "/tech",
       title: "TECH",
       details:
         "Our technical events cover a wide range of domains like CyberSecurity, Artificial intelligence, UI/UX etc making sure that everyone gets a glimpse of the wide technological world that we are catering to.",
@@ -21,6 +22,7 @@ function Landing() {
     {
       photo: queen,
       frame: kingFrame,
+      link: "/non-tech",
       title: "NON-TECH",
       details:
         "Experience the vibrant non-technical events at Hackerz! Take a break from the daily grind and dive into excitement. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
@@ -28,6 +30,7 @@ function Landing() {
     {
       photo: king,
       frame: kingFrame,
+      link: "/work-shop",
       title: "WORK SHOP",
       details:
         "Our technical events cover a wide range of domains like CyberSecurity, Artificial intelligence, UI/UX etc making sure that everyone gets a glimpse of the wide technological world that we are catering to.",
@@ -45,6 +48,12 @@ function Landing() {
           <img src={flyer} alt="poster"></img>
         </div>
       </div>
+      <div className="marque">
+        <p>
+          Registration Fee: ₹230 per head. A participation certificate will be
+          provided for all.
+        </p>
+      </div>
       <Counter />
       <Prize />
       <div className="event-card-container">
@@ -55,6 +64,7 @@ function Landing() {
             frame={data.frame}
             title={data.title}
             details={data.details}
+            link={data.link}
           />
         ))}
       </div>

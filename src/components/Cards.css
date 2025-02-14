@@ -1,22 +1,16 @@
-.card-div{
-  height: 300px;
-}
-
-.events  {
+.events-tech {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
+  justify-content: space-around;
   width: 100%;
   flex-wrap: wrap;
 }
 
-.event-card {
-  width: 250px;
+.event-card-tech {
+  width: 280px;
   height: 400px;
   background: white;
-  border: 2px solid rgb(255, 0, 0);
-  color: red;
+  border: 2px solid #000b6f;
+  color: #000b6f;
   border-radius: 10px;
   position: relative;
   display: flex;
@@ -24,76 +18,75 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  margin: 10px; 
-  box-sizing: border-box; 
+  margin: 10px;
+  box-sizing: border-box;
   opacity: 0; /* Ensure the element is initially hidden */
   animation: fadeIn 1s ease-out forwards; /* Apply the animation */
 }
 
 @media (min-width: 1024px) {
-  .events {
+  .events-tech {
     flex-direction: row;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
   }
 
-  .event-card {
+  .event-card-tech {
     width: 300px;
     height: 450px;
   }
 }
 
-
-.card-top,
-.card-bottom {
+.card-top-tech,
+.card-bottom-tech {
   position: absolute;
   font-size: 20px;
   font-weight: bold;
 }
 
-.card-top {
+.card-top-tech {
   top: 10px;
   left: 10px;
   text-align: left;
 }
 
-.card-bottom {
+.card-bottom-tech {
   bottom: 10px;
   right: 10px;
   text-align: right;
   transform: rotate(180deg); /* Rotates the bottom corner */
 }
 
-.event-card-inside {
+.event-card-inside-tech {
   width: 80%;
   height: 100%;
   margin: 10px 0px;
-  border: 0.1px solid rgba(255, 0, 0, 0.797);
+  border: 0.1px solid #000b6f;
   background: rgba(211, 211, 211, 0.237);
   border-radius: 8px;
 }
 
-.event-top {
+.event-top-tech {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60%;
+  height: 40%;
   padding: 0; /* Removed padding to eliminate extra space */
   overflow: hidden;
 }
 
-.event-top img {
+.event-top-tech img {
   width: 100%; /* Ensures it fills the container */
   height: 100%;
   object-fit: cover; /* Crops to fit the space without gray areas */
   border-radius: 5px;
 }
-.event-details {
+.event-details-tech {
   height: 40%;
   padding: 8px;
   font-size: 14px;
   text-align: justify;
-  color: #ff0000;
+  color: #000b6f;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -101,19 +94,19 @@
   align-items: center; /* Centers content horizontally */
 }
 
-.event-details p {
+.event-details-tech p {
   font-weight: 600;
   margin-bottom: 10px; /* Adds spacing between text and button */
 }
-.event-details h6 {
+.event-details-tech h6 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bolder;
 }
 
-.event-details button {
+.event-details-tech button {
   border: none;
   padding: 7px 25px;
-  background-color: red;
+  background-color: #000b6f;
   font-weight: 500;
   color: #fff;
   border-radius: 5px;
@@ -121,8 +114,8 @@
   font-size: 14px;
 }
 
-.event-details button:hover {
-  background-color: #af0000;
+.event-details-tech button:hover {
+  background-color: #000426;
 }
 
 @keyframes fadeIn {

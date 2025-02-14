@@ -26,15 +26,11 @@ function Contact({ photo, title, details }) {
             <ul>
               <li>
                 <FaPhoneAlt />
-                &nbsp;&nbsp;Aakash:<a href="tel:9080352052">90803 52052</a>
+                &nbsp;&nbsp;<a href="tel:9025857272">90258 57272</a>
               </li>
               <li>
                 <FaPhoneAlt />
-                &nbsp;&nbsp; Regin:<a href="tel:9486770938">94867 70938</a>
-              </li>
-              <li>
-                <FaPhoneAlt />
-                &nbsp;&nbsp; Manav:<a href="tel:9043038902">90430 38902</a>
+                &nbsp;&nbsp;<a href="tel:9962382191">99623 82191</a>
               </li>
             </ul>
           </section>
