@@ -1,7 +1,11 @@
 import React from 'react'
 import Card from './Card'
 
+let cardFlag=false;
 const view = (id) => {
+    console.log(cardFlag)
+    if(cardFlag) return;
+    cardFlag=true;
     const card = document.querySelector(`.${id}`);
     const toth = window.innerHeight; // Total height of the viewport
     const totw = window.innerWidth; // Total width of the viewport
@@ -50,10 +54,10 @@ const view = (id) => {
 
     // Event to restore the card on overlay click
     const closeCard = () => {
-      // Restore the card's previous position and styles
+      setTimeout(()=>{
+        // Restore the card's previous position and styles
       card.style.transform = previousStyle.transform; // Reset transform
       card.style.zIndex = previousStyle.zIndex; // Reset z-index
-
       // Remove the overlay
         if (document.body.contains(overlay)) {
         document.body.removeChild(overlay);
@@ -61,6 +65,9 @@ const view = (id) => {
 
       // Remove event listener from the card to avoid stacking
         card.removeEventListener("click", closeCard);
+        cardFlag=false;
+      },500)
+
     };
 
     // Attach event listeners to close the card

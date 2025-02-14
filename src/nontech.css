@@ -38,7 +38,8 @@ header{
     display: flex;
     padding: 5px;
     flex-direction: column;
-    min-height: 390px;
+    height: 500em;
+    max-height: 390px;
     width: 240px;
     border-radius: 10px;
     background-color: white;
@@ -52,7 +53,7 @@ header{
 }
 
 .card-1{
-    top: 500px;
+    top: 400px;
     /* height: 400px; */
     transform: rotateZ(-10deg);
     z-index: 3;
@@ -65,7 +66,7 @@ header{
 }
 
 .card-3{
-    top:-500px;
+    top:-400px;
     transform: rotateZ(-10deg);
     /* transform: rotateZ(20deg); */
     z-index: 1;
