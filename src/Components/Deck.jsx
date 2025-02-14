@@ -66,7 +66,7 @@ const view = (id) => {
       // Remove event listener from the card to avoid stacking
         card.removeEventListener("click", closeCard);
         cardFlag=false;
-      },500)
+      },50)
 
     };
 
