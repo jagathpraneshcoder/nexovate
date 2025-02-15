@@ -6,14 +6,17 @@ import backCard from "../assets/back-card.svg";
 
 function EventCard({ photo, title, details, link }) {
   const [isFlipped, setIsFlipped] = useState(false);
-
+  console.log(isFlipped);
   useEffect(() => {
-    const flipInterval = setInterval(() => {
-      setIsFlipped((prev) => !prev);
-    }, 12000); // Flip every 12 seconds
+    const flipInterval = setTimeout(
+      () => {
+        setIsFlipped((prev) => !prev);
+      },
+      isFlipped ? 2000 : 10000
+    ); // 2s for back side, 10s for front side
 
-    return () => clearInterval(flipInterval);
-  }, []);
+    return () => clearTimeout(flipInterval);
+  }, [isFlipped]);
 
   return (
     <motion.div
@@ -23,12 +26,15 @@ function EventCard({ photo, title, details, link }) {
         x: [-3, -2, 2, -2, 2, -2],
       }}
       transition={{
-        duration: 1, // 1-second flip animation
+        duration: 0.5, // 1-second flip animation
         ease: "easeInOut",
       }}
     >
       {isFlipped ? (
-        <div className="back-side event-card-inside">
+        <div
+          className="back-side event-card-inside"
+          onClick={() => setIsFlipped((prev) => !prev)}
+        >
           <img src={backCard} alt="back-card" className="back-image" />
         </div>
       ) : (

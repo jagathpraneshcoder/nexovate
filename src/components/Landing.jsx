@@ -39,16 +39,19 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
   return (
     <>
       <div className="landing-container">
-        <div>
+        {/* <div>
           <span>THE</span>
           <span> SYMPOSIUM</span>
-        </div>
+        </div> */}
         <div className="poster-container">
           <section className="poster-gif">
             <img src={joker} alt="poster"></img>
           </section>
           <section className="poster-content">
-            <h1>NEXOVATE 2K25</h1>
+            <h1>NEXOVATE'25</h1>
+          </section>
+          <section className="land-btn">
+            <button>Deal Me In</button>
           </section>
         </div>
       </div>
