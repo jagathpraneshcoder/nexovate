@@ -1,11 +1,12 @@
-.h2-tag {
+.h1-tag h1 {
   font-family: "Inter", serif;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: bold;
   margin: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 .card-column {

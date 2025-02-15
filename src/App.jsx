@@ -9,48 +9,65 @@ import queen from "./assets/queen.svg";
 import NonTech from "./components/NonTech/NonTech";
 import Workshops from "./components/Workshop";
 import Navbar from "./components/Navbar";
-
+import EventDisplay from "./components/Tech/EventDisplay";
 function App() {
-  // Event data
   const dataTech = [
     {
-      eventName: "Event 1",
-      photo: king,
-      details: "event 1 details",
-      link: "/tech-event/1",
+      id: 1,
+      suit: "♥",
+      rank: "K",
+      image: "srcassetsace.svg",
+      name: "Poker Night Championship",
+      description: "Biggest game of the year",
+      link: "/tech/1",
     },
     {
-      eventName: "Event 2",
-      photo: queen,
-      details: "Event 2 details",
-      link: "/tech-event/2",
+      id: 2,
+      suit: "♠",
+      rank: "Q",
+      image: "srcassetsace.svg",
+      name: "High Stakes Showdown",
+      description: "Play, win, and become legend",
+      link: "/tech/1",
     },
     {
-      eventName: "Event 3",
-      photo: king,
-      details: "Event 3 Details",
-      link: "/tech-event/3",
+      id: 3,
+      suit: "♠",
+      rank: "J",
+      image: "srcassetsace.svg",
+      name: "High Stakes Showdown 2",
+      description: "Play, win, and become legend",
+      link: "/tech/1",
     },
   ];
 
   const dataNonTech = [
     {
-      eventName: "Event 1",
-      photo: king,
-      details: "event 1 details",
-      link: "/non-tech-event/1",
+      id: 1,
+      suit: "♥",
+      rank: "K",
+      image: "srcassetsace.svg",
+      name: "Poker Night Championship",
+      description: "Biggest game of the year",
+      link: "/non-tech/1",
     },
     {
-      eventName: "Event 2",
-      photo: queen,
-      details: "Event 2 details",
-      link: "/non-tech-event/2",
+      id: 2,
+      suit: "♠",
+      rank: "Q",
+      image: "srcassetsace.svg",
+      name: "High Stakes Showdown",
+      description: "Play, win, and become legend",
+      link: "/non-tech/1",
     },
     {
-      eventName: "Event 3",
-      photo: king,
-      details: "Event 3 Details",
-      link: "/non-tech-event/3",
+      id: 3,
+      suit: "♠",
+      rank: "J",
+      image: "srcassetsace.svg",
+      name: "High Stakes Showdown 2",
+      description: "Play, win, and become legend",
+      link: "/non-tech/1",
     },
   ];
 
@@ -73,7 +90,6 @@ function App() {
     <Router>
       {/* Navbar receives the scroll function */}
       <Navbar scrollToSection={scrollToSection} />
-
       <Routes>
         {/* Passing the refs to Landing so it can assign them to sections */}
         <Route
@@ -94,7 +110,8 @@ function App() {
           path="/non-tech"
           element={<Technical data={dataNonTech} title="Non-Tech" />}
         />
-        <Route path="/non-tech-event/:id" element={<NonTech />} />
+        <Route path="/non-tech/:id" element={<NonTech />} />
+        <Route path="/tech/:id" element={<EventDisplay />} />
         <Route path="/work-shop" element={<Workshops />} />
       </Routes>
     </Router>

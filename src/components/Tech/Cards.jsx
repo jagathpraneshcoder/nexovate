@@ -1,7 +1,7 @@
 import React from "react";
-import "./Cards.css"
-
-const Cards = ({ suit, rank, image, name, description }) => {
+import "./Cards.css";
+import { Link } from "react-router-dom";
+const Cards = ({ suit, rank, image, name, description, link }) => {
   return (
     <div className="card">
       <div className="card-corner top-left">
@@ -11,7 +11,9 @@ const Cards = ({ suit, rank, image, name, description }) => {
       <img src={image} className="event-image" />
       <h2 className="event-name">{name}</h2>
       <p className="event-description">{description}</p>
-      <button className="explore-button">Explore</button>
+      <Link to={link}>
+        <button className="explore-button">Explore</button>
+      </Link>
       <div className="card-corner bottom-right">
         <span>{rank}</span>
         <span>{suit}</span>
@@ -21,4 +23,3 @@ const Cards = ({ suit, rank, image, name, description }) => {
 };
 
 export default Cards;
-
