@@ -46,14 +46,13 @@
   font-size: 14px;
   text-align: center;
   color: gray;
-  margin-bottom: 30px;
 }
 
 .card-corner {
   position: absolute;
   font-size: 22px;
   font-weight: bold;
-  font-family: 'Times New Roman', serif;
+  font-family: "Times New Roman", serif;
 }
 
 .top-left {
