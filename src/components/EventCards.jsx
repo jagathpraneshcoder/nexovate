@@ -35,7 +35,12 @@ function EventCard({ photo, title, details, link }) {
           className="back-side event-card-inside"
           onClick={() => setIsFlipped((prev) => !prev)}
         >
-          <img src={backCard} alt="back-card" className="back-image" />
+          <img
+            src={backCard}
+            alt="back-card"
+            className="back-image"
+            loading="lazy"
+          />
         </div>
       ) : (
         <>
@@ -44,7 +49,7 @@ function EventCard({ photo, title, details, link }) {
           </section>
           <div className="event-card-inside">
             <section className="event-top">
-              <img src={photo} alt={"event-logo-" + title} />
+              <img src={photo} alt={"event-logo-" + title} loading="lazy" />
             </section>
             <section className="event-details">
               <h6>{title}</h6>

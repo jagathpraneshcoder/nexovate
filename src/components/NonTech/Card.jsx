@@ -8,7 +8,12 @@ const Card = (props) => {
     >
       <div className="sym-top">
         <div className="card-no">{props.no}</div>
-        <img src={props.img} className="card-symbol" alt="" />
+        <img
+          src={props.img}
+          className="card-symbol"
+          alt="symbol"
+          loading="lazy"
+        />
       </div>
       <div className="card-header">{props.header}</div>
       <div className="card-content-box">
@@ -23,7 +28,12 @@ const Card = (props) => {
       <div className="card-footer"></div>
       <div className="sym-btm">
         <div className="card-no">{props.no}</div>
-        <img src={props.img} className="card-symbol " alt="" />
+        <img
+          src={props.img}
+          className="card-symbol "
+          alt="symbol"
+          loading="lazy"
+        />
       </div>
     </div>
   );

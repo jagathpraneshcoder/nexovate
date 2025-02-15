@@ -76,12 +76,12 @@ const NonTech = () => {
         rel="stylesheet"
       />
 
-      <img className="ace-img" src={ace} alt="ace" />
-      <img className="ace-img img-1" src={ace} alt="ace" />
+      <img className="ace-img" src={ace} alt="ace" loading="lazy" />
+      <img className="ace-img img-1" src={ace} alt="ace" loading="lazy" />
       <Header />
       <Deck deck={cardcontent[eventId - 1]} />
-      <img src={coin} alt="" className="bg-coin" />
-      <img src={bg_img} alt="" className="bg-card" />
+      <img src={coin} alt="" className="bg-coin" loading="lazy" />
+      <img src={bg_img} alt="" className="bg-card" loading="lazy" />
     </div>
   );
 };

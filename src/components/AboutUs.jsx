@@ -15,7 +15,12 @@ const AboutUs = () => {
       {/* Header Section */}
       <div className="header-section">
         <div className="header">
-          <img src={spadeIcon} alt="Spade" className="icon-left" />
+          <img
+            src={spadeIcon}
+            alt="Spade"
+            className="icon-left"
+            loading="lazy"
+          />
           <h2>ABOUT US</h2>
         </div>
         <motion.img
@@ -46,13 +51,18 @@ const AboutUs = () => {
           }}
         >
           <div className="card-corner top-left">
-            <img src={diamondIcon} alt="Diamond Icon" />
+            <img src={diamondIcon} alt="Diamond Icon" loading="lazy" />
           </div>
           <div className="card-header">
             <h3>
               Kongu <br /> Engineering <br /> College
             </h3>
-            <img src={kecLogo} alt="KEC Logo" className="college-logo" />
+            <img
+              src={kecLogo}
+              alt="KEC Logo"
+              className="college-logo"
+              loading="lazy"
+            />
           </div>
           <p>
             Kongu Engineering College, one of the foremost multi-professional
@@ -89,7 +99,12 @@ const AboutUs = () => {
               <br /> &nbsp;&nbsp;&nbsp;&nbsp;&&nbsp;&nbsp;&nbsp;&nbsp; <br />
               &nbsp;&nbsp;&nbsp;&nbsp;CDCC&nbsp;&nbsp;&nbsp;&nbsp;
             </h3>
-            <img src={kecLogo} alt="KEC Logo" className="college-logo" />
+            <img
+              src={kecLogo}
+              alt="KEC Logo"
+              className="college-logo"
+              loading="lazy"
+            />
           </div>
           <p>
             The B.E. Computer Science and Design programme aims to develop
@@ -104,11 +119,13 @@ const AboutUs = () => {
               src={csdaLogo}
               alt="CSDA Logo"
               className="college-logo small-logo"
+              loading="lazy"
             />
             <img
               src={cdccLogo}
               alt="CDCC Logo"
               className="college-logo small-logo"
+              loading="lazy"
             />
           </div>
         </motion.div>
@@ -125,7 +142,12 @@ const AboutUs = () => {
 
       {/* Footer Icons */}
       <div className="footer-icons">
-        <img src={clubIcon} alt="Club Icon" className="footer-club" />
+        <img
+          src={clubIcon}
+          alt="Club Icon"
+          className="footer-club"
+          loading="lazy"
+        />
       </div>
     </div>
   );

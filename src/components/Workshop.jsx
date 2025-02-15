@@ -62,6 +62,7 @@ const Workshops = () => {
                   src={workshop.image}
                   alt={workshop.title}
                   className="card-image"
+                  loading="lazy"
                 />
                 <div className="card-content">
                   <h3>{workshop.title}</h3>

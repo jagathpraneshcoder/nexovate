@@ -8,7 +8,7 @@ function Prize() {
     <div className="prize-container">
       <div className="prize-card">
         <section className="card-center">
-          <img src={bottle} alt="bottle"></img>
+          <img src={bottle} alt="bottle" loading="lazy"></img>
           <p>Cash Prize - 20 K</p>
           <button>Register & Play</button>
         </section>

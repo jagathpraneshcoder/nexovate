@@ -45,7 +45,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
         </div> */}
         <div className="poster-container">
           <section className="poster-gif">
-            <img src={joker} alt="poster"></img>
+            <img src={joker} alt="poster" loading="lazy"></img>
           </section>
           <section className="poster-content">
             <h1>NEXOVATE'25</h1>
