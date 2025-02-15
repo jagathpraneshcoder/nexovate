@@ -3,12 +3,12 @@ import "./Technical.css";
 import Cards from "./Cards";
 import events from "./event.js";
 
-export default function Technical({ data }) {
+export default function Technical({ data, title }) {
   return (
     <div>
       <div className="technical-container">
         <div>
-          <h1>Technical</h1>
+          <h1>{title}</h1>
         </div>
       </div>
       <div className="app">

@@ -22,7 +22,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 10px;
   position: relative;
-  margin: 20px 0px;
+  margin-bottom: 20px;
   animation: scrollAnimation 1s ease-out;
 }
 
@@ -70,10 +70,11 @@
 
 .app {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; /* Optional: to handle multiple cards in a responsive manner */
   height: 100vh; /* Optional: to center vertically within the viewport */
+  gap: 20;
 }
 
 .explore-button {

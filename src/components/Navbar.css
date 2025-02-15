@@ -72,7 +72,7 @@ nav ul li button:hover {
 }
 
 /* Media query for larger screens (PC) */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   /* Header container */
   .header-container {
     display: flex;
@@ -113,7 +113,10 @@ nav ul li button:hover {
     font-size: 52px;
     margin-left: 4px;
   }
-
+  .event-name-logo img {
+    width: 15em;
+    height: 5em;
+  }
   /* Menu container */
   .menu-container {
     background: #1010106f;
@@ -157,5 +160,12 @@ nav ul li button:hover {
   nav ul li button:hover {
     color: #fff;
     background-color: #25fe62;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .event-name-logo img {
+    width: 25em;
+    height: 5em;
   }
 }

@@ -223,6 +223,7 @@
   display: flex;
   align-items: center; /* Aligns "Welcome" vertically */
   justify-content: center;
+  flex-direction: column;
   height: 10%;
 }
 
@@ -254,7 +255,9 @@
   text-shadow: 1px 1px 2.5px #fff, -1px -1px 2.5px #fff;
   animation: glow 1.5s infinite alternate;
 }
-
+.land-btn {
+  position: relative;
+}
 /* Glowing effect animation */
 .land-btn button {
   border: none;

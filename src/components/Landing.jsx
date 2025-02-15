@@ -49,9 +49,9 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
           </section>
           <section className="poster-content">
             <h1>NEXOVATE'25</h1>
-          </section>
-          <section className="land-btn">
-            <button>Deal Me In</button>
+            <section className="land-btn">
+              <button>Deal Me In</button>
+            </section>
           </section>
         </div>
       </div>

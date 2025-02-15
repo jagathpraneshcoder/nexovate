@@ -72,6 +72,20 @@ const AboutUs = () => {
             passion and reason. The college offers courses at the forefront of
             knowledge and fosters a rigorous scholarship environment.
           </p>
+          <div className="club_logo">
+            <img
+              src={csdaLogo}
+              alt="CSDA Logo"
+              className="college-logo small-logo"
+              loading="lazy"
+            />
+            <img
+              src={cdccLogo}
+              alt="CDCC Logo"
+              className="college-logo small-logo"
+              loading="lazy"
+            />
+          </div>
         </motion.div>
 
         {/* CSDA and CDCC Card */}

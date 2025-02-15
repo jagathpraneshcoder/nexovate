@@ -78,6 +78,10 @@
   text-align: center;
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 /* Card Corners */
@@ -120,8 +124,7 @@
 
 .card-header {
   position: relative;
-  margin-left: auto; /* Pushes the header to the right */
-  text-align: right; /* Align text to the right */
+  text-align: center; /* Align text to the right */
 }
 
 /* Card Text */
@@ -215,7 +218,10 @@
     height: 100px;
     width: 70px;
   }
-
+  .card-header h3 {
+    margin-top: 20px;
+    padding: 20px;
+  }
   .icon-right {
     height: 180px;
     width: 180px;
@@ -226,7 +232,9 @@
     justify-content: center;
     gap: 40px;
   }
-
+  .about-card {
+    height: 35em;
+  }
   .about-card h3 {
     font-size: 30px;
   }
@@ -258,5 +266,12 @@
 
   .footer-club {
     width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-card {
+    height: 35em;
+    width: 60%;
   }
 }
