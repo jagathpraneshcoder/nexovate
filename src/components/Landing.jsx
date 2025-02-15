@@ -1,5 +1,4 @@
 import React from "react";
-
 import Counter from "./Counter";
 import EventCard from "./EventCards";
 import kingFrame from "../assets/king-frame.svg";
@@ -8,7 +7,7 @@ import queen from "../assets/queen.svg";
 import Prize from "./Prize";
 import "./Landing.css";
 import Contact from "./Contact";
-import flyer from "../assets/flyer.webp";
+import joker from "../assets/joker.gif";
 import AboutUs from "./AboutUs.jsx";
 function Landing({ aboutRef, eventsRef, registerRef }) {
   const data = [
@@ -44,9 +43,14 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
           <span>THE</span>
           <span> SYMPOSIUM</span>
         </div>
-        {/* <div className="poster-container">
-          <img src={flyer} alt="poster"></img>
-        </div> */}
+        <div className="poster-container">
+          <section className="poster-gif">
+            <img src={joker} alt="poster"></img>
+          </section>
+          <section className="poster-content">
+            <h1>NEXOVATE 2K25</h1>
+          </section>
+        </div>
       </div>
       <div className="marque">
         <p>

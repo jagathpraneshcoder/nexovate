@@ -25,17 +25,7 @@
 .landing-container span:nth-child(2) {
   color: #daa735;
 }
-.poster-container {
-  width: 80%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.poster-container img {
-  width: 100%;
-  height: 100%;
-}
+
 @media (min-width: 769px) {
   .event-card-container {
     justify-content: space-around;
@@ -194,5 +184,85 @@
   }
   to {
     transform: translateX(-100%);
+  }
+}
+.poster-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; /* Ensures side-by-side alignment */
+  max-width: 1200px;
+  width: 90%;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 20px;
+  height: 100%;
+}
+
+/* Left Side - GIF */
+.poster-gif {
+  flex: 0 1 auto; /* Ensures it only takes necessary space */
+  display: flex;
+  justify-content: center;
+}
+
+.poster-gif img {
+  max-width: 100%;
+  height: 12em;
+  border-radius: 15px;
+}
+
+/* Right Side - Text Content */
+.poster-content {
+  flex: 0 1 auto;
+  text-align: left;
+  display: flex;
+  align-items: center; /* Aligns "Welcome" vertically */
+  justify-content: center;
+  height: 100%;
+}
+
+.poster-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .poster-container {
+    flex-direction: row; /* Keep it in the same line */
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .poster-gif img {
+    height: 10em;
+  }
+
+  .poster-content {
+    text-align: center;
+  }
+}
+
+.poster-content h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: "Orbitron", sans-serif; /* Futuristic font */
+  text-shadow: 4px 4px 10px #fff, -4px -4px 10px #fff;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Glowing effect animation */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .poster-content h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
   }
 }
