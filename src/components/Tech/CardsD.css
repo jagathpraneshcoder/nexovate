@@ -1,0 +1,90 @@
+.card-container {
+  position: relative;
+}
+
+.card {
+  width: 270px;
+  height: 400px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  position: relative;
+  margin: 20px 0px;
+  animation: scrollAnimation 1s ease-out;
+  will-change: transform; /* Hint to the browser for optimization */
+}
+
+.image-container {
+  margin-top: 30px;
+  width: 80%;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+  color: black;
+}
+
+.event-description {
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.card-corner {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Times New Roman', serif;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+  color: red;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+  color: red;
+}
+
+.explore-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+.explore-button:active {
+  background-color: #003f7f;
+}

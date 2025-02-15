@@ -3,7 +3,7 @@ import { useRef } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Landing from "./components/Landing";
-import Technical from "./components/Technical";
+import Technical from "./components/Tech/Technical";
 import king from "./assets/king.svg";
 import queen from "./assets/queen.svg";
 import NonTech from "./components/NonTech/NonTech";

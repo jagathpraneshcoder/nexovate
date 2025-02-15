@@ -42,7 +42,7 @@ const Counter = () => {
       </section>
       <section className="timer">
         {Object.entries(timeLeft).map(([unit, value], index) => (
-          <div className="card" key={unit} data-icon={cardIcons[index]}>
+          <div className="card-c" key={unit} data-icon={cardIcons[index]}>
             <span className="value">{value}</span>
             <p className="unit">
               {unit.charAt(0).toUpperCase() + unit.slice(1)}
