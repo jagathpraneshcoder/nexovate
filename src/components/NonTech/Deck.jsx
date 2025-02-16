@@ -28,7 +28,6 @@ const view = (id) => {
   overlay.style.width = "100vw";
   overlay.style.height = "100vh";
   overlay.style.transition = "background-color 0.3s ease";
-  overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // Semi-transparent background
   overlay.style.zIndex = "9";
   document.body.appendChild(overlay);
 

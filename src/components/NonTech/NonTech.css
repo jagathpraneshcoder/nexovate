@@ -75,6 +75,7 @@ header {
 .card-symbol {
   height: 30 px;
   width: 30 px;
+  padding: 30px 0px 20px 10px;
 }
 
 .card-header {
@@ -173,5 +174,5 @@ header {
   width: 160px;
   right: -0px;
   top: 480px;
-  z-index: 4;
+  z-index: 2;
 }

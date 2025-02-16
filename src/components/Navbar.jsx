@@ -4,9 +4,14 @@ import csda from "../assets/csda.svg";
 import cdcc from "../assets/cdcc.svg";
 import logo from "../assets/logo.png";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar({ scrollToSection }) {
+  const navigate = useNavigate();
+  const handleClick = (data) => {
+    navigate("/");
+    scrollToSection(data);
+  };
   return (
     <div>
       <div className="header-container">
@@ -27,9 +32,9 @@ function Navbar({ scrollToSection }) {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li onClick={() => scrollToSection("about")}>About</li>
-            <li onClick={() => scrollToSection("events")}>Events</li>
-            <li onClick={() => scrollToSection("register")}>Register</li>
+            <li onClick={() => handleClick("about")}>About</li>
+            <li onClick={() => handleClick("events")}>Events</li>
+            <li onClick={() => handleClick("register")}>Register</li>
           </ul>
         </nav>
       </div>

@@ -1,11 +1,11 @@
 .event-card {
   width: 280px;
   height: 500px;
-  background: white;
-  border: 2px solid rgb(255, 0, 0);
+  position: relative;
+  perspective: 1500px;
+  margin: 20px;
   color: red;
   border-radius: 10px;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,13 +13,62 @@
   padding: 10px;
   margin-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  perspective: 1000px;
 }
+
 .event-card:hover {
   cursor: pointer;
   transform: translateY(-10px);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   background-color: #ffebeb;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.front-side,
+.back-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  background: white;
+  border: 2px solid rgb(255, 0, 0);
+  overflow: hidden;
+}
+
+.front-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.back-side {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.back-image {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
 }
 
 .card-top,
@@ -43,10 +92,10 @@
 }
 
 .event-card-inside {
-  width: 80%;
+  width: 90%;
   height: 100%;
-  margin: 10px 0px;
-  border: 0.1px solid rgba(255, 0, 0, 0.797);
+  margin: 10px 0;
+  border: 1px solid rgba(255, 0, 0, 0.5);
   background: rgba(240, 240, 240, 0.237);
   border-radius: 8px;
   transform-style: preserve-3d;
@@ -184,6 +233,31 @@ a {
   border-radius: 10px;
 }
 
+/* Add smooth hover effect */
+.card-inner:hover {
+  transform: translateY(-5px) rotateY(0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-inner.flipped:hover {
+  transform: translateY(-5px) rotateY(180deg);
+}
+
+/* Add media queries for responsiveness */
+@media screen and (min-width: 768px) {
+  .event-card {
+    width: 320px;
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .event-card {
+    width: 350px;
+    height: 600px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .contact-card {
     width: 500px; /* Increase width for larger screens */
@@ -216,5 +290,158 @@ a {
   .card-top,
   .card-bottom {
     font-size: 30px; /* Increase icon size */
+  }
+}
+
+/* Contact Card Styles */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  color: #000 !important;
+}
+
+.contact-card {
+  width: 300px;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 12px;
+  position: relative;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-symbol {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  color: #000;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.symbol {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.letter {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact-header h1 {
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contact-details {
+  padding: 15px 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(3px);
+}
+
+.contact-icon {
+  font-size: 16px;
+  margin-right: 12px;
+  color: #000;
+}
+
+.contact-item a,
+.contact-item span {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Update card symbol styles */
+.contact-card .card-symbol {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  color: #000 !important; /* Force black color */
+}
+
+.contact-card .symbol {
+  font-size: 24px;
+  line-height: 1;
+  color: #000 !important; /* Force black color */
+}
+
+.contact-card .letter {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000 !important; /* Force black color */
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .contact-card {
+    width: 350px;
+  }
+
+  .map-container {
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-card {
+    width: 400px;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+
+  .contact-item {
+    font-size: 16px;
   }
 }
