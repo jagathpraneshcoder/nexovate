@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Counter from "./Counter";
 import EventCard from "./EventCards";
 import kingFrame from "../assets/king-frame.svg";
@@ -9,7 +9,14 @@ import "./Landing.css";
 import Contact from "./Contact";
 import joker from "../assets/joker.gif";
 import AboutUs from "./AboutUs.jsx";
+
 function Landing({ aboutRef, eventsRef, registerRef }) {
+  const prizeRef = useRef(null);
+
+  const scrollToPrize = () => {
+    prizeRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   const data = [
     {
       photo: king,
@@ -17,7 +24,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
       link: "/tech",
       title: "TECH",
       details:
-        "Our technical events cover a wide range of domains like CyberSecurity, Artificial intelligence, UI/UX etc making sure that everyone gets a glimpse of the wide technological world that we are catering to.",
+        "Join Paper Poker, Matching UI, and the Coding Event to showcase your ideas, design skills, and coding expertise while competing for exciting prizes! 🎭💻✨ Limited slots—register now",
     },
     {
       photo: queen,
@@ -25,7 +32,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
       link: "/non-tech",
       title: "NON-TECH",
       details:
-        "Experience the vibrant non-technical events at Hackerz! Take a break from the daily grind and dive into excitement. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        "Take on thrilling challenges that test your creativity, teamwork, and quick thinking! Face surprise twists, hands-on tasks, and compete for glory. Join the fun and claim your rewards! 🏆✨",
     },
     {
       photo: king,
@@ -33,16 +40,13 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
       link: "/work-shop",
       title: "WORK SHOP",
       details:
-        "Our technical events cover a wide range of domains like CyberSecurity, Artificial intelligence, UI/UX etc making sure that everyone gets a glimpse of the wide technological world that we are catering to.",
+        "Gain hands-on UI design and tech skills through expert sessions, live demos, and practical exercises. Master stunning UIs in Design Deck or explore deep tech in Immersion Play—upskill and earn a certificate!",
     },
   ];
+
   return (
     <>
       <div className="landing-container">
-        {/* <div>
-          <span>THE</span>
-          <span> SYMPOSIUM</span>
-        </div> */}
         <div className="poster-container">
           <section className="poster-gif">
             <img src={joker} alt="poster" loading="lazy"></img>
@@ -50,7 +54,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
           <section className="poster-content">
             <h1>NEXOVATE'25</h1>
             <section className="land-btn">
-              <button>Deal Me In</button>
+              <button onClick={scrollToPrize}>Deal Me In</button>
             </section>
           </section>
         </div>
@@ -62,7 +66,9 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
         </p>
       </div>
       <Counter />
-      <Prize />
+      <div ref={prizeRef}>
+        <Prize />
+      </div>
       <section ref={aboutRef}>
         <AboutUs />
       </section>
@@ -82,4 +88,5 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
     </>
   );
 }
+
 export default Landing;

@@ -5,7 +5,7 @@ const Counter = () => {
   const cardIcons = ["♕", "♖", "♥", "♠"];
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date("2025-12-31T23:59:59");
+    const eventDate = new Date("2025-03-01T23:59:59");
     const now = new Date();
     const difference = eventDate - now;
 

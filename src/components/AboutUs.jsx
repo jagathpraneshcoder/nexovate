@@ -57,31 +57,19 @@ const AboutUs = () => {
             <h3>
               Kongu <br /> Engineering <br /> College
             </h3>
-            <img
-              src={kecLogo}
-              alt="KEC Logo"
-              className="college-logo"
-              loading="lazy"
-            />
           </div>
           <p>
-            Kongu Engineering College, one of the foremost multi-professional
-            research-led institutions, is internationally recognized for its
-            career-oriented education. It provides an integral,
-            interdisciplinary education that bridges theory and practice,
-            passion and reason. The college offers courses at the forefront of
-            knowledge and fosters a rigorous scholarship environment.
+            Kongu Engineering College is a leading research-driven institution
+            known for its professional and career-oriented education. It blends
+            theory with practice, fostering a dynamic learning environment that
+            encourages innovation and interdisciplinary excellence. Guided by a
+            committed trust, the college upholds value-based education, academic
+            rigor, and a strong community spirit.
           </p>
           <div className="club_logo">
             <img
-              src={csdaLogo}
+              src={kecLogo}
               alt="CSDA Logo"
-              className="college-logo small-logo"
-              loading="lazy"
-            />
-            <img
-              src={cdccLogo}
-              alt="CDCC Logo"
               className="college-logo small-logo"
               loading="lazy"
             />
@@ -113,12 +101,6 @@ const AboutUs = () => {
               <br /> &nbsp;&nbsp;&nbsp;&nbsp;&&nbsp;&nbsp;&nbsp;&nbsp; <br />
               &nbsp;&nbsp;&nbsp;&nbsp;CDCC&nbsp;&nbsp;&nbsp;&nbsp;
             </h3>
-            <img
-              src={kecLogo}
-              alt="KEC Logo"
-              className="college-logo"
-              loading="lazy"
-            />
           </div>
           <p>
             The B.E. Computer Science and Design programme aims to develop

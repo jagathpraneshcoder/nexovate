@@ -1,36 +1,41 @@
 import React from "react";
 import bottle from "../assets/bottle.svg";
-import venue from "../assets/venue.svg";
-import nexovateRegister from "../assets/nexovate-register.svg";
 import { motion } from "framer-motion";
+import "./Prize.css"; // Import the new CSS file
+import { useRef } from "react";
 function Prize() {
   return (
-    <div className="prize-container">
-      <div className="prize-card">
-        <section className="card-center">
-          <img src={bottle} alt="bottle" loading="lazy"></img>
-          <p>Cash Prize - 20 K</p>
-          <button>Register & Play</button>
+    <div className="prize-container-a">
+      <div className="prize-card-a">
+        <section className="card-top-left-a">♠</section>
+        <section className="card-top-right-a">♦</section>
+        <section className="card-center-a">
+          <section className="price-content-a">
+            <div className="prize-details-a">
+              <p>♠️♦️ All-in-One Jackpot! ♣️♥️ 🃏</p>
+              <p>💰 Prize Pool: ₹20,000 – Win Big! 🏆 🃏</p>
+              <p>🎟️ Entry Fee: Just ₹230 for Full Access 🎫 🃏</p>
+              <p>
+                ♠️ Participate in: Tech Events 🔧 Non-Tech Events 🎭 Workshops
+                📚 🃏
+              </p>
+              <p>
+                🎖️ Perks for All Players: Participation & Winning Certificates
+                📜 Exclusive Kit 🎁 Refreshments & Lunch 🍽️
+              </p>
+              <p>🎲 Don't Fold – Play Your Best Hand! Register Now! 🚀</p>
+            </div>
+          </section>
+          <a
+            href="https://forms.gle/Hb5Xoacd4VmRL8oG9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Register & Play</button>
+          </a>
         </section>
-        <section className="card-top-right">
-          <motion.img
-            src={nexovateRegister}
-            alt="nexovateRegister"
-            className="nexovateRegister"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 3, repeat: Infinity }}
-          />
-        </section>
-        <section className="card-bottom-left">
-          <motion.img
-            src={venue}
-            alt="venue"
-            className="venue"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 3, repeat: Infinity }}
-          />
-        </section>
-        <section className="card-bottom-right">♥ A</section>
+        <section className="card-bottom-left-a">♣</section>
+        <section className="card-bottom-right-a">♥</section>
       </div>
     </div>
   );

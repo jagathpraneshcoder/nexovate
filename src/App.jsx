@@ -10,34 +10,40 @@ import NonTech from "./components/NonTech/NonTech";
 import Workshops from "./components/Workshop";
 import Navbar from "./components/Navbar";
 import EventDisplay from "./components/Tech/EventDisplay";
+import paper from "./assets/paper-poker.webp";
+import ui from "./assets/ui.webp";
+import coding from "./assets/coding.webp";
 function App() {
   const dataTech = [
     {
       id: 1,
       suit: "♥",
       rank: "K",
-      image: "srcassetsace.svg",
-      name: "Poker Night Championship",
-      description: "Biggest game of the year",
+      image: paper,
+      name: "Paper Poker",
+      description:
+        "Paper Poker 🃏 Pitch, impress, and win! No abstract filtration—just a fair stage for your innovation. Register now! 🚀💡",
       link: "/tech/1",
     },
     {
       id: 2,
       suit: "♠",
       rank: "Q",
-      image: "srcassetsace.svg",
-      name: "High Stakes Showdown",
-      description: "Play, win, and become legend",
-      link: "/tech/1",
+      image: ui,
+      name: "Matching UI",
+      description:
+        "Matching UI 🎨⚡ Design stunning UIs, impress the judges, and win! Limited slots—register now! 🚀",
+      link: "/tech/2",
     },
     {
       id: 3,
       suit: "♠",
       rank: "J",
-      image: "srcassetsace.svg",
-      name: "High Stakes Showdown 2",
-      description: "Play, win, and become legend",
-      link: "/tech/1",
+      image: coding,
+      name: "Code Clever",
+      description:
+        "Code Clash 💻⚡ Solve, debug, and conquer challenges in a fun-packed coding showdown! Show your skills and win big. Register now! 🚀",
+      link: "/tech/3",
     },
   ];
 

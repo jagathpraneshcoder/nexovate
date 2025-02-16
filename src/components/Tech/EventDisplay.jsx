@@ -4,33 +4,54 @@ import { useScroll } from "framer-motion";
 import "./EventDisplay.css";
 import CardsD from "./CardsD";
 export default function EventDisplay() {
-  const event = [
+  const events = [
     {
-      title: "Bluff the Brain",
-      teamSize: "2 members",
-      totalRounds: 3,
+      title: "Paper Poker",
+      teamSize: "2-4 members",
+      totalRounds: 1,
       rounds: [
         {
-          roundTitle: "BrainTease",
+          roundTitle: "Idea Pitch",
           details: [
-            "Participants will answer multiple-choice questions related to non-technical topics like movies, general fun quizzes, and logo identification.",
+            "Teams will present their research and innovative ideas in a structured format.",
+            "Presentations should follow a 6-8 slide format covering Title, Abstract, Existing Methods, Proposed Methods, Conclusion & Results, and Future Plans.",
+            "Each team gets a maximum of 5 minutes for the presentation followed by a 2-minute Q&A session.",
+            "No abstract filtration—every team gets a fair chance.",
+            "Top teams will be awarded based on idea quality, clarity, and impact.",
           ],
         },
+      ],
+    },
+    {
+      title: "Matching UI",
+      teamSize: "2 members",
+      totalRounds: 1,
+      rounds: [
         {
-          roundTitle: "SeekSphere",
+          roundTitle: "Creative UI Challenge",
           details: [
-            "A team will be given 3 objects.",
-            "Participants will be blindfolded and are asked to figure out what the objects are.",
-            "Teams that discover the highest number of objects within the shortest time frame will move to the next round.",
+            "Participants will design visually stunning and interactive UI components.",
+            "Use tools like Canva for posters and Figma for interactive designs.",
+            "Judging is based on creativity, usability, and innovation.",
+            "Bonus mini-tasks can earn extra points.",
+            "Stay updated via WhatsApp for event details and submissions.",
           ],
         },
+      ],
+    },
+    {
+      title: "Code Clash",
+      teamSize: "Individual or 2 members",
+      totalRounds: 1,
+      rounds: [
         {
-          roundTitle: "GuessGrove",
+          roundTitle: "Coding Showdown",
           details: [
-            "One team member will be given a secret word and must convey it to the other team member using indirect clues.",
-            "Each team will get 5 chances for each word.",
-            "The teams that find the most words in the shortest time will be considered as winners.",
-            "Any use of external resources during the game will result in immediate disqualification.",
+            "Participants will solve algorithmic and problem-solving challenges.",
+            "Expect debugging, logic-based tasks, and optimization problems.",
+            "Each problem carries different difficulty levels with corresponding points.",
+            "The leaderboard will track live rankings based on accuracy and speed.",
+            "Winners are decided based on the highest cumulative score.",
           ],
         },
       ],
@@ -48,14 +69,14 @@ export default function EventDisplay() {
   return (
     <div ref={containerRef}>
       <div className="h1-tag">
-        <h1>{event[0].title}</h1>
+        <h1>{events[eventId - 1].title}</h1>
       </div>
       <div className="card-column">
         <CardsD
           key={eventId}
           suit="♠"
           rank={`J`}
-          event={event[eventId - 1]}
+          event={events[eventId - 1]}
           index={eventId}
           progress={scrollYProgress}
         />

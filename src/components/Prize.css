@@ -1,0 +1,123 @@
+.prize-container-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.prize-card-a {
+  width: 350px;
+  height: 600px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+}
+
+.card-center-a {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-center-a img {
+  width: 70px;
+}
+
+.price-content-a {
+  margin-top: 20px;
+}
+
+.prize-details-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inknut Antiqua", serif;
+  color: #000;
+}
+
+.prize-details-a p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.card-center-a button {
+  padding: 8px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.card-center-a button:hover {
+  background-color: #b12000;
+  font-style: normal;
+}
+
+.card-top-left-a,
+.card-top-right-a,
+.card-bottom-left-a,
+.card-bottom-right-a {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+.card-top-left-a {
+  top: 10px;
+  left: 10px;
+}
+
+.card-top-right-a {
+  top: 10px;
+  right: 10px;
+}
+
+.card-bottom-left-a {
+  bottom: 10px;
+  left: 10px;
+}
+
+.card-bottom-right-a {
+  bottom: 10px;
+  right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .prize-card-a {
+    width: 400px;
+    height: 600px;
+  }
+
+  .card-center-a img {
+    width: 100px;
+  }
+
+  .prize-details-a p {
+    font-size: 18px;
+  }
+
+  .card-center-a button {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+
+  .card-top-left-a,
+  .card-top-right-a,
+  .card-bottom-left-a,
+  .card-bottom-right-a {
+    font-size: 28px;
+  }
+}
