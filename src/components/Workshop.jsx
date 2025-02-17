@@ -12,14 +12,15 @@ const workshops = [
         Solo participation with a dedicated PC. Design a UI for an app (e.g., transportation or remote learning) using Figma, guided by experts.
       `,
     description2: `
-        Instructor-led session with live demos and projector explanations. Certificates upon completion. First 60 participants, register early!
+        Instructor-led session with live demos and projector explanations. Certificates upon completion. 
       `,
-    coordinator: "Akash 90803 52052",
+    coordinator: "Sri Ram 63801 29058",
     image: Queen,
     suit: "♣",
     rank: "Q",
     chipImage: GreenPoker,
     badgeImage: GeometricPoker,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScIuDwEA8jMaS94f5NOZRlmABXC64_gDP1PygIEK7QoSlyFjQ/viewform?usp=header&authuser=1",
   },
   {
     title: "Immersion Play",
@@ -29,12 +30,13 @@ const workshops = [
     description2: `
         Be punctual, attend all sessions, and receive e-materials. Participation certificates given. Clarify doubts during Q&A sessions.
       `,
-    coordinator: "Akash 90803 52052",
+    coordinator: "Pradeeppa 80156 46479",
     image: Queen,
     suit: "♣",
     rank: "Q",
     chipImage: GreenPoker,
     badgeImage: GeometricPoker,
+    link: "https://forms.gle/6rHb7GqXJWptE3cX8",
   },
 ];
 
@@ -62,7 +64,16 @@ const Workshops = () => {
                   <h3>{workshop.title}</h3>
                   <p className="description">{workshop.description1}</p>
                   <p className="description">{workshop.description2}</p>
-                  <button>Register Now</button>
+                  <p className="description">
+                    <strong>First 60 participants, register early!</strong>
+                  </p>
+                  <a
+                    href={workshop.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>Register Now</button>
+                  </a>
                   <p className="coordinator">
                     Co-Ordinator <br></br> {workshop.coordinator}
                   </p>

@@ -4,7 +4,7 @@ import coin from "../../assets/bg-coin-2.svg";
 import Header from "./Header";
 import Deck from "./Deck";
 import card_ace from "../../assets/ace-card-2.svg";
-import bg_img from "../../assets/bg-card-1.svg";
+import bg_img from "../../assets/bg-deck.svg";
 import ace from "../../assets/clever.svg";
 import { useParams } from "react-router-dom";
 const NonTech = () => {
@@ -175,12 +175,10 @@ const NonTech = () => {
         rel="stylesheet"
       />
 
-      <img className="ace-img" src={ace} alt="ace" loading="lazy" />
-      <img className="ace-img img-1" src={ace} alt="ace" loading="lazy" />
       <Header />
       <Deck deck={cardcontent[eventId - 1]} />
-      <img src={coin} alt="" className="bg-coin" loading="lazy" />
-      <img src={bg_img} alt="" className="bg-card" loading="lazy" />
+      <img src={ace} alt="logo" className="bg-coin" loading="lazy" />
+      <img src={bg_img} alt="log" className="bg-deck" loading="lazy" />
     </div>
   );
 };

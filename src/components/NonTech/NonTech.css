@@ -1,64 +1,86 @@
-.ace-img {
-  height: 75px;
-  width: 120px;
-  position: absolute;
-  top: 40px;
-}
-
-header {
+.header-nt {
+  position: relative;
   display: flex;
   width: 100%;
-  flex-direction: row;
-  font-family: "Jaro", sans-serif;
-  align-items: center;
+  padding: 10px;
   justify-content: center;
-  margin-top: 50px;
+  font-family: "Jaro", sans-serif;
+}
+
+.ace-img {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  animation: spin 2s linear infinite;
+  transform-origin: center;
+  backface-visibility: hidden; /* Prevents flickering */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .h-text {
   display: flex;
   text-align: center;
-  /* align-self: center; */
-  font-size: 25px;
+  font-size: 2rem;
   color: white;
-  z-index: 1;
+}
+
+.deck {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+  top: -6rem;
 }
 
 .card-non-tech {
   display: flex;
   padding: 5px;
   flex-direction: column;
-  height: 500em;
-  max-height: 390px;
-  width: 240px;
-  border-radius: 10px;
   background-color: white;
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 100%;
+  width: 70%;
+  height: 20rem;
+  overflow: hidden;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   transition: all 0.5s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
 }
 
 .card-1 {
-  top: 400px;
-  /* height: 400px; */
-  transform: rotateZ(-10deg);
+  top: 18rem;
+  transform: rotateZ(-5deg);
   z-index: 3;
 }
 
 .card-2 {
-  top: 0px;
+  top: -9.3rem;
   transform: rotateZ(10deg);
   z-index: 2;
 }
 
 .card-3 {
-  top: -400px;
-  transform: rotateZ(-10deg);
-  /* transform: rotateZ(20deg); */
+  top: -33.6rem;
+  /* transform: rotateZ(-10deg); */
+  transform: rotateZ(24deg);
   z-index: 1;
 }
 
@@ -73,18 +95,19 @@ header {
 }
 
 .card-symbol {
-  height: 30 px;
-  width: 30 px;
-  padding: 30px 0px 20px 10px;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .card-header {
   font-family: "Russo One", sans-serif;
-  height: 75px;
-  max-width: 75%;
-  font-size: 21px;
+  /* height: 75px; */
+  width: 100%;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
+  height: 3rem;
+  justify-content: center;
 }
 
 .card-content-box {
@@ -97,14 +120,14 @@ header {
 }
 
 .card-no {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .card-footer {
   width: 100%;
   display: flex;
-  height: 75px;
+  height: 3rem;
 }
 
 .sym-top,
@@ -128,51 +151,42 @@ header {
   rotate: 180deg;
 }
 
-.deck {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* flex-grow: 1; */
-  max-height: 100%;
-  width: 100vw;
-  overflow: hidden;
-}
-
-.rel-deck {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
 #non-tech {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
-
-.bg-card {
-  position: absolute;
-  height: 450px;
-  width: 234px;
-  z-index: -1;
-  bottom: -45px;
-  left: 0;
-  /* transform: rotateZ(-10deg); */
+  min-height: 100vh;
+  height: fit-content;
+  width: 100vw;
+  overflow-x: hidden !important;
 }
 
 .img-1 {
-  right: 5px;
+  right: 10px;
+}
+.img-2 {
+  left: 10px;
 }
 
 .bg-coin {
+  /* /* position: absolute; */
+  height: 10rem;
+  width: 10rem;
+  right: 0rem;
+  bottom: -4rem;
+  z-index: -4;
   position: absolute;
-  height: 160px;
-  width: 160px;
-  right: -0px;
-  top: 480px;
-  z-index: 2;
+}
+
+/* html{
+  overflow: hidden !important;
+} */
+
+.bg-deck {
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  left: -10rem;
+  top: 30rem;
+  transform: rotateY(180deg);
+  z-index: -4;
 }
