@@ -45,7 +45,7 @@
   position: relative;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
   width: 400px;
-  height: 600px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,9 +67,8 @@
 
 .card-image {
   width: 80%;
-  height: auto;
+  height: 160px;
   object-fit: cover;
-  margin: 10px 0;
 }
 
 .card-content {

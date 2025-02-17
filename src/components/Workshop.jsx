@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import GeometricPoker from "../assets/Nexovate-games.svg";
 import GreenPoker from "../assets/Green Poker Chipes.svg";
-import Queen from "../assets/Black Spade Queen.svg";
+import designDeck from "../assets/design-deck.webp";
+import immersionPlay from "../assets/imm-play.webp";
 import "./Workshop.css";
 
 const workshops = [
@@ -15,7 +16,7 @@ const workshops = [
         Instructor-led session with live demos and projector explanations. Certificates upon completion. 
       `,
     coordinator: "Sri Ram 63801 29058",
-    image: Queen,
+    image: designDeck,
     suit: "♣",
     rank: "Q",
     chipImage: GreenPoker,
@@ -31,7 +32,7 @@ const workshops = [
         Be punctual, attend all sessions, and receive e-materials. Participation certificates given. Clarify doubts during Q&A sessions.
       `,
     coordinator: "Pradeeppa 80156 46479",
-    image: Queen,
+    image: immersionPlay,
     suit: "♣",
     rank: "Q",
     chipImage: GreenPoker,
