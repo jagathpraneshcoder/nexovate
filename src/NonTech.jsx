@@ -4,7 +4,7 @@ import coin from './assets/bg-coin-2.svg'
 import Header from './Components/Header'
 import Deck from './Components/Deck'
 import card_ace from './assets/ace-card-2.svg'
-import bg_img from './assets/bg-card-1.svg'
+import bg_img from './assets/bg-deck.svg'
 import ace from './assets/clever.svg'
 
 
@@ -44,19 +44,19 @@ const NonTech = () => {
         }
     ]
   return (
-    <div id='non-tech'>
+    <><div id='non-tech'>
         <link href="https://fonts.googleapis.com/css2?family=Jaro&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet"/>
 
-        <img className='ace-img' src={ace} alt="ace" />
-        <img className='ace-img img-1' src={ace} alt="ace" />
         <Header/>
         <Deck deck={cardcontent}/>
-        <img src={coin} alt=""  className='bg-coin'/>
-        <img src={bg_img} alt=""  className='bg-card'/>
+    <img src={ace} alt=""  className='bg-coin'/>
+    {/* <img src={bg_img} alt=""  className='bg-card'/> */}
+    <img src={bg_img} alt="" className='bg-deck'/>
     </div>
+    </>
   )
 }
 
