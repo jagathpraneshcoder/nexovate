@@ -13,13 +13,13 @@ const view = (id) => {
   const cw = card.offsetWidth; // Card width
 
   // Check if an overlay already exists
-  if (document.querySelector(".overlay")) {
+  if (document.querySelector(".overlay-nt")) {
     return; // Prevent multiple overlays
   }
 
   // Create an overlay to make the background dull
   const overlay = document.createElement("div");
-  overlay.classList.add("overlay");
+  overlay.classList.add("overlay-nt");
   overlay.style.position = "fixed";
   overlay.style.display = "flex";
   overlay.style.justifyContent = "center";
@@ -52,13 +52,13 @@ const view = (id) => {
   // Calculate offset based on card ID
   let offset = 1.25; // default offset in rem
   switch (id) {
-    case "card-1":
+    case "card-1-nt":
       offset = 1.25;
       break;
-    case "card-2":
+    case "card-2-nt":
       offset = 2.5;
       break;
-    case "card-3":
+    case "card-3-nt":
       offset = 3.75;
       break;
   }
@@ -68,7 +68,7 @@ const view = (id) => {
   card.style.transform = `translate(calc(${
     centerX / 16
   }rem - ${offset}rem), calc(${centerY / 16 - 2}rem ))`; // Move the card to the center
-  card.style.zIndex = "10"; // Bring the card to the front
+  card.style.zIndex = "10000"; // Bring the card to the front
 
   // Expand the card
   card.style.width = "85%";
@@ -104,7 +104,7 @@ const view = (id) => {
 
 const Deck = (props) => {
   return (
-    <div className="deck">
+    <div className="deck-nt">
       <Card
         color={props.deck[0].color}
         no={props.deck[0].no}
@@ -112,7 +112,7 @@ const Deck = (props) => {
         header={props.deck[0].header}
         content={props.deck[0].content}
         className="card-1-nt"
-        id="card-1"
+        id="card-1-nt"
         onClick={view}
       />
       <Card
@@ -122,7 +122,7 @@ const Deck = (props) => {
         header={props.deck[1].header}
         content={props.deck[1].content}
         className="card-1-nt"
-        id="card-2"
+        id="card-2-nt"
         onClick={view}
       />
       <Card
@@ -132,7 +132,7 @@ const Deck = (props) => {
         header={props.deck[2].header}
         content={props.deck[2].content}
         className="card-1-nt"
-        id="card-3"
+        id="card-3-nt"
         onClick={view}
       />
     </div>

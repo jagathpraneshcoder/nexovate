@@ -7,34 +7,29 @@
   font-family: "Jaro", sans-serif;
 }
 
-.ace-img {
+.ace-img-nt {
   height: 5rem;
   width: 5rem;
   position: absolute;
   top: 0;
   z-index: 4;
-  animation: spin 2s linear infinite;
+  /* animation: spin 2s linear infinite; */
   transform-origin: center;
   backface-visibility: hidden; /* Prevents flickering */
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.h-text {
+.h-text-nt {
   display: flex;
   text-align: center;
   font-size: 2rem;
   color: white;
 }
 
-.deck {
+.scorll-card-nt {
+  padding: 0px 10px 0px 10px;
+}
+
+.deck-nt {
   display: flex;
   position: relative;
   width: 100%;
@@ -47,13 +42,14 @@
 
 .card-non-tech {
   display: flex;
-  padding: 5px;
+  padding: 0px 20px 0px 20px;
   flex-direction: column;
   background-color: white;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 100%;
   width: 70%;
+  max-width: 400px;
   height: 20rem;
   overflow: hidden;
   align-items: center;
@@ -65,19 +61,19 @@
   position: relative;
 }
 
-.card-1 {
+.card-1-nt {
   top: 18rem;
   transform: rotateZ(-5deg);
   z-index: 3;
 }
 
-.card-2 {
+.card-2-nt {
   top: -9.3rem;
   transform: rotateZ(10deg);
   z-index: 2;
 }
 
-.card-3 {
+.card-3-nt {
   top: -33.6rem;
   /* transform: rotateZ(-10deg); */
   transform: rotateZ(24deg);
@@ -94,23 +90,23 @@
   color: red;
 }
 
-.card-symbol {
+.card-symbol-nt {
   height: 1.5rem;
   width: 1.5rem;
 }
 
-.card-header {
+.card-header-nt {
   font-family: "Russo One", sans-serif;
   /* height: 75px; */
   width: 100%;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
-  height: 3rem;
+  height: 3.5rem;
   justify-content: center;
 }
 
-.card-content-box {
+.card-content-box-nt {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,39 +115,40 @@
   flex-grow: 1;
 }
 
-.card-no {
+.card-no-nt {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.card-footer {
+.card-footer-nt {
   width: 100%;
   display: flex;
-  height: 3rem;
+  height: 3.5rem;
 }
 
-.sym-top,
-.sym-btm {
+.sym-top-nt,
+.sym-btm-nt {
   width: fit-content;
   position: absolute;
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.sym-top {
+.sym-top-nt {
   top: 2px;
   left: 7px;
 }
 
-.sym-btm {
+.sym-btm-nt {
   bottom: 2px;
   right: 7px;
   rotate: 180deg;
 }
 
-#non-tech {
+#non-tech-nt {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -160,14 +157,14 @@
   overflow-x: hidden !important;
 }
 
-.img-1 {
+.img-1-nt {
   right: 10px;
 }
-.img-2 {
+.img-2-nt {
   left: 10px;
 }
 
-.bg-coin {
+.bg-coin-nt {
   /* /* position: absolute; */
   height: 10rem;
   width: 10rem;
@@ -181,7 +178,7 @@
   overflow: hidden !important;
 } */
 
-.bg-deck {
+.bg-deck-nt {
   position: absolute;
   height: 20rem;
   width: 20rem;
