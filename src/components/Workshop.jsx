@@ -9,13 +9,10 @@ const workshops = [
   {
     title: "Design Deck",
     description1: `
-        UI/UX workshops are collaborative sessions where designers, developers, 
-        and stakeholders come together to improve the user experience of a product 
-        or service.
+        Solo participation with a dedicated PC. Design a UI for an app (e.g., transportation or remote learning) using Figma, guided by experts.
       `,
-    description2: ` 
-        These workshops can be used to brainstorm new ideas, solve existing problems, 
-        and test new designs.
+    description2: `
+        Instructor-led session with live demos and projector explanations. Certificates upon completion. First 60 participants, register early!
       `,
     coordinator: "Akash 90803 52052",
     image: Queen,
@@ -25,15 +22,12 @@ const workshops = [
     badgeImage: GeometricPoker,
   },
   {
-    title: "Design Deck",
+    title: "Immersion Play",
     description1: `
-        UI/UX workshops are collaborative sessions where designers, developers, 
-        and stakeholders come together to improve the user experience of a product 
-        or service.
+        Technical workshop with a dedicated PC for each participant. Hands-on experience and practical learning.
       `,
-    description2: ` 
-        These workshops can be used to brainstorm new ideas, solve existing problems, 
-        and test new designs.
+    description2: `
+        Be punctual, attend all sessions, and receive e-materials. Participation certificates given. Clarify doubts during Q&A sessions.
       `,
     coordinator: "Akash 90803 52052",
     image: Queen,

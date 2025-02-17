@@ -13,6 +13,9 @@ import EventDisplay from "./components/Tech/EventDisplay";
 import paper from "./assets/paper-poker.webp";
 import ui from "./assets/ui.webp";
 import coding from "./assets/coding.webp";
+import bluff from "./assets/bluff.webp";
+import storySpade from "./assets/story-spade.webp";
+import deckClash from "./assets/deck-clash.webp";
 function App() {
   const dataTech = [
     {
@@ -52,28 +55,31 @@ function App() {
       id: 1,
       suit: "♥",
       rank: "K",
-      image: "srcassetsace.svg",
-      name: "Poker Night Championship",
-      description: "Biggest game of the year",
+      image: bluff,
+      name: "Bluff The Brain",
+      description:
+        "Test your knowledge in a thrilling three-round challenge! Work together, solve puzzles, and prove you're the smartest team!",
       link: "/non-tech/1",
     },
     {
       id: 2,
       suit: "♠",
       rank: "Q",
-      image: "srcassetsace.svg",
-      name: "High Stakes Showdown",
-      description: "Play, win, and become legend",
-      link: "/non-tech/1",
+      image: storySpade,
+      name: "Story Spade",
+      description:
+        "Unleash your creativity to finish an exciting story! Impress the judges with your unique spin and storytelling skills!",
+      link: "/non-tech/2",
     },
     {
       id: 3,
       suit: "♠",
       rank: "J",
-      image: "srcassetsace.svg",
-      name: "High Stakes Showdown 2",
-      description: "Play, win, and become legend",
-      link: "/non-tech/1",
+      image: deckClash,
+      name: "Deck Clash",
+      description:
+        "Gear up for a rollercoaster of surprises and challenges! Can your team outsmart the rest in this high-energy game?",
+      link: "/non-tech/3",
     },
   ];
 
