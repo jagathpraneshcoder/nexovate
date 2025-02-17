@@ -25,7 +25,30 @@
   color: white;
 }
 
-.scorll-card-nt {
+.btn-container-nt {
+  display: flex;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.btn-container-nt button {
+  padding: 8px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.btn-container-nt button:hover {
+  background-color: #b12000;
+  font-style: normal;
+}
+
+.b .scorll-card-nt {
   padding: 0px 10px 0px 10px;
 }
 
@@ -37,7 +60,7 @@
   flex-direction: column;
   gap: 10px;
   flex-grow: 1;
-  top: -6rem;
+  top: -4rem;
 }
 
 .card-non-tech {

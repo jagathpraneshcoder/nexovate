@@ -176,6 +176,11 @@ const NonTech = () => {
       />
 
       <Header />
+      <div className="btn-container-nt">
+        <a>
+          <button>Register</button>
+        </a>
+      </div>
       <Deck deck={cardcontent[eventId - 1]} />
       <img src={ace} alt="logo" className="bg-coin-nt" loading="lazy" />
       <img src={bg_img} alt="log" className="bg-deck-nt" loading="lazy" />
