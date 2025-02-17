@@ -34,7 +34,15 @@ function Navbar({ scrollToSection }) {
             </li>
             <li onClick={() => handleClick("about")}>About</li>
             <li onClick={() => handleClick("events")}>Events</li>
-            <li onClick={() => handleClick("register")}>Register</li>
+            <li>
+              <a
+                href="https://forms.gle/Hb5Xoacd4VmRL8oG9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Register
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

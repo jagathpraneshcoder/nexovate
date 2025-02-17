@@ -15,6 +15,7 @@ const NonTech = () => {
     [
       {
         no: "6",
+        link: "",
         color: "black",
         img: card_ace,
         header: "Bluff The Brain",
@@ -40,6 +41,7 @@ const NonTech = () => {
       {
         no: "7",
         color: "black",
+        link: "",
         img: card_ace,
         header: "Co-ordinator",
         content: [
@@ -155,7 +157,11 @@ const NonTech = () => {
       },
     ],
   ];
-
+  let links = [
+    "https://forms.gle/Rt23CGbjMuV178VQ9",
+    "https://forms.gle/uEiCnC5exy7AwVNi6",
+    "https://forms.gle/6rViAu4B9tu3UQudA",
+  ];
   return (
     <div id="non-tech-nt">
       <link
@@ -174,10 +180,9 @@ const NonTech = () => {
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
         rel="stylesheet"
       />
-
       <Header />
       <div className="btn-container-nt">
-        <a>
+        <a href={links[eventId - 1]} target="_blank" rel="noopener noreferrer">
           <button>Register</button>
         </a>
       </div>

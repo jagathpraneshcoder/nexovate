@@ -9,7 +9,7 @@ import "./Landing.css";
 import Contact from "./Contact";
 import joker from "../assets/joker.gif";
 import AboutUs from "./AboutUs.jsx";
-
+import Footer from "./Footer.jsx";
 function Landing({ aboutRef, eventsRef, registerRef }) {
   const prizeRef = useRef(null);
 
@@ -61,7 +61,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
       </div>
       <div className="marque">
         <p>
-          Registration Fee: ₹230 per head. A participation certificate will be
+          Registration Fee: ₹250 per head. A participation certificate will be
           provided for all.
         </p>
       </div>
@@ -85,6 +85,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
         ))}
       </div>
       <Contact />
+      <Footer />
     </>
   );
 }

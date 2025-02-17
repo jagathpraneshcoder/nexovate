@@ -27,6 +27,7 @@ function App() {
       description:
         "Paper Poker 🃏 Pitch, impress, and win! No abstract filtration—just a fair stage for your innovation. Register now! 🚀💡",
       link: "/tech/1",
+      contact: "Pradeeppa 80156 46479",
     },
     {
       id: 2,
@@ -37,6 +38,7 @@ function App() {
       description:
         "Matching UI 🎨⚡ Design stunning UIs, impress the judges, and win! Limited slots—register now! 🚀",
       link: "/tech/2",
+      contact: "Dharshana 93601 17147",
     },
     {
       id: 3,
@@ -47,6 +49,7 @@ function App() {
       description:
         "Code Clash 💻⚡ Solve, debug, and conquer challenges in a fun-packed coding showdown! Show your skills and win big. Register now! 🚀",
       link: "/tech/3",
+      contact: "Mugesh 80729 96867",
     },
   ];
 
@@ -60,6 +63,7 @@ function App() {
       description:
         "Test your knowledge in a thrilling three-round challenge! Work together, solve puzzles, and prove you're the smartest team!",
       link: "/non-tech/1",
+      contact: "JagathPranesh 96265 13370",
     },
     {
       id: 2,
@@ -70,6 +74,7 @@ function App() {
       description:
         "Unleash your creativity to finish an exciting story! Impress the judges with your unique spin and storytelling skills!",
       link: "/non-tech/2",
+      contact: "Jaswanth 63747 65399",
     },
     {
       id: 3,
@@ -80,6 +85,7 @@ function App() {
       description:
         "Gear up for a rollercoaster of surprises and challenges! Can your team outsmart the rest in this high-energy game?",
       link: "/non-tech/3",
+      contact: "Pragalya 86086 30909",
     },
   ];
 

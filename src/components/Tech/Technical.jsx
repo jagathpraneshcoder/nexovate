@@ -24,6 +24,7 @@ export default function Technical({ data, title }) {
             name={event.name}
             description={event.description}
             link={event.link}
+            contact={event.contact}
           />
         ))}
       </div>

@@ -81,6 +81,7 @@ export default function EventDisplay() {
           ],
         },
       ],
+      link: "https://forms.gle/BW4pSoNzMMLrgFnw6",
     },
   ];
   const { id } = useParams();

@@ -11,7 +11,7 @@
 
 .card {
   width: 270px;
-  height: 450px;
+  height: 500px;
   background: white;
   border: 2px solid black;
   border-radius: 12px;
@@ -33,7 +33,11 @@
   border-radius: 8px;
   object-fit: cover;
 }
-
+.co-name {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
 .event-name {
   font-size: 18px;
   font-weight: bold;

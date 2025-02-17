@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cards.css";
 import { Link } from "react-router-dom";
-const Cards = ({ suit, rank, image, name, description, link }) => {
+const Cards = ({ suit, rank, image, name, description, link, contact }) => {
   return (
     <div className="card">
       <div className="card-corner top-left">
@@ -11,6 +11,7 @@ const Cards = ({ suit, rank, image, name, description, link }) => {
       <img src={image} className="event-image" loading="lazy" />
       <h2 className="event-name">{name}</h2>
       <p className="event-description">{description}</p>
+      <p className="co-name">{contact}</p>
       <Link to={link}>
         <button className="explore-button">Explore</button>
       </Link>

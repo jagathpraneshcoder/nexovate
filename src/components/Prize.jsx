@@ -14,7 +14,7 @@ function Prize() {
             <div className="prize-details-a">
               <p>♠️♦️ All-in-One Jackpot! ♣️♥️ 🃏</p>
               <p>💰 Prize Pool: ₹20,000 – Win Big! 🏆 🃏</p>
-              <p>🎟️ Entry Fee: Just ₹230 for Full Access 🎫 🃏</p>
+              <p>🎟️ Entry Fee: Just ₹250 for Full Access 🎫 🃏</p>
               <p>
                 ♠️ Participate in: Tech Events 🔧 Non-Tech Events 🎭 Workshops
                 📚 🃏
