@@ -24,6 +24,7 @@ function Prize() {
                 📜 Exclusive Kit 🎁 Refreshments & Lunch 🍽️
               </p>
               <p>🎲 Don't Fold – Play Your Best Hand! Register Now! 🚀</p>
+              <p>Event Date: March 1,2025</p>
             </div>
           </section>
           <a

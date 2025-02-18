@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import joker from "../assets/joker.gif";
 import AboutUs from "./AboutUs.jsx";
 import Footer from "./Footer.jsx";
+
 function Landing({ aboutRef, eventsRef, registerRef }) {
   const prizeRef = useRef(null);
 
@@ -56,6 +57,11 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
             <section className="land-btn">
               <button onClick={scrollToPrize}>Deal Me In</button>
             </section>
+            <div className="date-container">
+              <p>
+                📅 <strong>Mark Your Calendars on</strong> March 1, 2025
+              </p>
+            </div>
           </section>
         </div>
       </div>
@@ -72,6 +78,16 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
       <section ref={aboutRef}>
         <AboutUs />
       </section>
+      <div className="rules">
+        <a
+          href="https://docs.google.com/document/d/134m7ZQUWZ0BQvKPJ1CE9BHtQ1f9NuzaU/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=true&authuser=1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="rules-button">Rules & Guidelines</button>
+        </a>
+        <p>Kindly go through the guidelines before registering</p>
+      </div>
       <div className="event-card-container" ref={eventsRef}>
         {data.map((data, index) => (
           <EventCard

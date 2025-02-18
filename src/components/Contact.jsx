@@ -27,15 +27,6 @@ function Contact() {
               ></iframe>
             </div>
           </section>
-          <div>
-            <a
-              href="https://docs.google.com/document/d/134m7ZQUWZ0BQvKPJ1CE9BHtQ1f9NuzaU/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=true&authuser=1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="rules-button">Rules & Guidelines</button>
-            </a>
-          </div>
           <section className="contact-details">
             <div className="contact-item">
               <FaPhoneAlt className="contact-icon" />

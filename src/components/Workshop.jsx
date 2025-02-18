@@ -24,13 +24,11 @@ const workshops = [
     link: "https://docs.google.com/forms/d/e/1FAIpQLScIuDwEA8jMaS94f5NOZRlmABXC64_gDP1PygIEK7QoSlyFjQ/viewform?usp=header&authuser=1",
   },
   {
-    title: "Immersion Play",
-    description1: `
-        Technical workshop with a dedicated PC for each participant. Hands-on experience and practical learning.
-      `,
-    description2: `
-        Be punctual, attend all sessions, and receive e-materials. Participation certificates given. Clarify doubts during Q&A sessions.
-      `,
+    title: "Immersion Play: AR/VR Workshop",
+    description1:
+      "Step into the future with an immersive AR/VR experience! Each participant gets hands-on training with Meta Oculus VR headsets, exploring cutting-edge technology.",
+    description2:
+      "Be on time, attend all sessions, and receive e-materials. Participation certificates will be provided. Engage in Q&A sessions to clarify doubts.",
     coordinator: "Pradeeppa 80156 46479",
     image: immersionPlay,
     suit: "♣",
