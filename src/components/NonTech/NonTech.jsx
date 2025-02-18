@@ -45,8 +45,8 @@ const NonTech = () => {
         img: card_ace,
         header: "Co-ordinator",
         content: [
-          <div className="strong">Aakash</div>,
-          <div className="strong">Ph: 90803 52052</div>,
+          <div className="strong">JagathPranesh</div>,
+          <div className="strong">Ph: 96265 13370</div>,
         ],
       },
       {
@@ -86,8 +86,8 @@ const NonTech = () => {
         img: card_ace,
         header: "Co-ordinator",
         content: [
-          <div className="strong">Aakash</div>,
-          <div className="strong">Ph: 90803 52052</div>,
+          <div className="strong">Jaswanth</div>,
+          <div className="strong">Ph: 63747 65399</div>,
         ],
       },
       {
@@ -136,8 +136,8 @@ const NonTech = () => {
         img: card_ace,
         header: "Co-ordinator",
         content: [
-          <div className="strong">Aakash</div>,
-          <div className="strong">Ph: 90803 52052</div>,
+          <div className="strong">Pragalya</div>,
+          <div className="strong">Ph: 86086 30909</div>,
         ],
       },
       {
