@@ -44,7 +44,9 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
         "Gain hands-on UI design and tech skills through expert sessions, live demos, and practical exercises. Master stunning UIs in Design Deck or explore deep tech in Immersion Play—upskill and earn a certificate!",
     },
   ];
-
+  const openEventLink = () => {
+    window.open("https://docs.google.com/document/d/1oixQe2qnsqku7OS07lXC_LRsh0nAl8z7/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=truehttps://docs.google.com/document/d/1oixQe2qnsqku7OS07lXC_LRsh0nAl8z7/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=true", "_blank");
+  }
   return (
     <>
       <div className="landing-container">
@@ -85,7 +87,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
           rel="noopener noreferrer"
         >
           <button className="rules-button">Rules & Guidelines</button>
-          <button className="rules-button">Events agenda</button>
+          <button className="rules-button" onClick={openEventLink}>Events agenda</button>
         </a>
         <p>Kindly go through the guidelines before registering</p>
       </div>
