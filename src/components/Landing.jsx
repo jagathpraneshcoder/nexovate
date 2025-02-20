@@ -85,6 +85,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
           rel="noopener noreferrer"
         >
           <button className="rules-button">Rules & Guidelines</button>
+          <button className="rules-button">Events agenda</button>
         </a>
         <p>Kindly go through the guidelines before registering</p>
       </div>
