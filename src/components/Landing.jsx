@@ -10,12 +10,17 @@ import Contact from "./Contact";
 import joker from "../assets/joker.gif";
 import AboutUs from "./AboutUs.jsx";
 import Footer from "./Footer.jsx";
+import { FaBook, FaCalendarAlt, FaClipboardList } from "react-icons/fa"; // Import Bootstrap icons
 
 function Landing({ aboutRef, eventsRef, registerRef }) {
   const prizeRef = useRef(null);
 
   const scrollToPrize = () => {
     prizeRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const openEventLink = (link) => {
+    window.open(link, "_blank");
   };
 
   const data = [
@@ -44,9 +49,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
         "Gain hands-on UI design and tech skills through expert sessions, live demos, and practical exercises. Master stunning UIs in Design Deck or explore deep tech in Immersion Play—upskill and earn a certificate!",
     },
   ];
-  const openEventLink = () => {
-    window.open("https://docs.google.com/document/d/1oixQe2qnsqku7OS07lXC_LRsh0nAl8z7/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=truehttps://docs.google.com/document/d/1oixQe2qnsqku7OS07lXC_LRsh0nAl8z7/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=true", "_blank");
-  }
+
   return (
     <>
       <div className="landing-container">
@@ -59,6 +62,19 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
             <section className="land-btn">
               <button onClick={scrollToPrize}>Deal Me In</button>
             </section>
+            <div className="rules">
+          <button className="rules-button" title="Rules & Guidelines" onClick={()=>openEventLink("https://docs.google.com/document/d/134m7ZQUWZ0BQvKPJ1CE9BHtQ1f9NuzaU/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=true&authuser=1")}>
+            <FaBook />Rules
+           
+          </button>
+          <button className="rules-button" onClick={()=>openEventLink("https://docs.google.com/document/d/1oixQe2qnsqku7OS07lXC_LRsh0nAl8z7/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=truehttps://docs.google.com/document/d/1oixQe2qnsqku7OS07lXC_LRsh0nAl8z7/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=true")} title="Agenda">
+            <FaCalendarAlt />Agenda
+            
+          </button>
+          <button className="rules-button" onClick={()=>openEventLink("https://drive.google.com/file/d/1sPE2u41_At3c-NJcPkiqIwH6yWd_lJQE/view?usp=sharing")} title="Registration Guide">
+            <FaClipboardList />Guide
+          </button>
+        </div>
             <div className="date-container">
               <p>
                 📅 <strong>Mark Your Calendars on</strong> March 1, 2025
@@ -80,17 +96,6 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
       <section ref={aboutRef}>
         <AboutUs />
       </section>
-      <div className="rules">
-        <a
-          href="https://docs.google.com/document/d/134m7ZQUWZ0BQvKPJ1CE9BHtQ1f9NuzaU/edit?usp=sharing&ouid=107264256920533900159&rtpof=true&sd=true&authuser=1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="rules-button">Rules & Guidelines</button>
-          <button className="rules-button" onClick={openEventLink}>Events agenda</button>
-        </a>
-        <p>Kindly go through the guidelines before registering</p>
-      </div>
       <div className="event-card-container" ref={eventsRef}>
         {data.map((data, index) => (
           <EventCard

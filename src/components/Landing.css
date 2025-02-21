@@ -168,6 +168,7 @@
   font-size: 20px;
   font-weight: bold;
   padding: 20px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,12 +284,13 @@
     letter-spacing: 2px;
   }
 }
-
 .rules {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  gap:10px;
+  margin-top: 10px;
+  /* width: fit-content; */
 }
 .rules p {
   color: #fff;
@@ -301,6 +303,47 @@
   margin-top: 15px;
   font-size: 18px;
 }
-.rules-button{
-  margin-left: 20px;
+
+
+.rules-button {
+  border: none;
+  padding: 5px;
+  background-color: red;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.rules-button:hover {
+  background-color: #b12000;
+}
+
+.rules-button .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  font-size: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0%; /* Position to the left of the button */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.rules-button:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
