@@ -72,12 +72,13 @@ const NonTech = () => {
             Each team must consist of two members.
           </div>,
           <div className="card-txt-nt">
-            ⦁ Complete the unfinished story within the given time frame.
+            ⦁ Participants will be given an movie based rounds.
           </div>,
           <div className="card-txt-nt">
-            ⦁ Entries will be judged based on creativity, engagement, and
-            concept.
+            ⦁ Entries will be judged based on their performance in those 2
+            rounds.
           </div>,
+          <div className="card-txt-nt">⦁ Event duration 1 hour.</div>,
         ],
       },
       {
