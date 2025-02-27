@@ -79,6 +79,7 @@ function Landing({ aboutRef, eventsRef, registerRef }) {
               <p>
                 📅 <strong>Mark Your Calendars on</strong> March 1, 2025
               </p>
+              <p className="close">Registeration closes on 27-02-2025 10PM</p>
             </div>
           </section>
         </div>
